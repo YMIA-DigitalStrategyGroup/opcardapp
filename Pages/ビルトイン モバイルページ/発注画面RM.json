@@ -26,6 +26,11 @@
           "DesignLengthInPixel": 24.0
         }
       },
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 24.0
+        }
+      },
       "14": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 32.0
@@ -49,11 +54,6 @@
       "19": {
         "GridRowColumnDefinition": {
           "DesignLengthInPixel": 12.0
-        }
-      },
-      "13": {
-        "GridRowColumnDefinition": {
-          "DesignLengthInPixel": 24.0
         }
       }
     },
@@ -686,7 +686,7 @@
                         "BindingInfo": {
                           "TableName": "ymia_t_opcard_hachu",
                           "ColumnName": "部品コード",
-                          "GUID": "f538a3ba-3199-453b-b1c6-d23284f21631"
+                          "GUID": "03da43e9-6b95-4d73-8cab-a5c4627368b8"
                         },
                         "Value": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -697,7 +697,7 @@
                         "BindingInfo": {
                           "TableName": "ymia_t_opcard_hachu",
                           "ColumnName": "部品名称",
-                          "GUID": "fd22681c-5d5f-48a4-a74d-a77d46fa2aee"
+                          "GUID": "5ee45ef9-7070-44f4-ab17-93ac662be41e"
                         },
                         "Value": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -708,7 +708,7 @@
                         "BindingInfo": {
                           "TableName": "ymia_t_opcard_hachu",
                           "ColumnName": "規格寸法",
-                          "GUID": "5e82348c-4d1d-4389-80ca-afb2bfb9ae74"
+                          "GUID": "f72e90e6-3d71-4911-9987-46a07dc8ce4b"
                         },
                         "Value": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -719,7 +719,7 @@
                         "BindingInfo": {
                           "TableName": "ymia_t_opcard_hachu",
                           "ColumnName": "図面番号",
-                          "GUID": "a4adeb9b-1f50-47a8-bfec-6dd2e03da547"
+                          "GUID": "53add358-404b-423e-88b5-3d150efc3d90"
                         },
                         "Value": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -730,7 +730,7 @@
                         "BindingInfo": {
                           "TableName": "ymia_t_opcard_hachu",
                           "ColumnName": "ロケーション",
-                          "GUID": "89efae3a-6f45-4257-a343-f053aab58415"
+                          "GUID": "5e0d30f0-fe83-4054-822a-9505f0d9bf42"
                         },
                         "Value": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -741,7 +741,7 @@
                         "BindingInfo": {
                           "TableName": "ymia_t_opcard_hachu",
                           "ColumnName": "ステータス",
-                          "GUID": "8aba03a5-d724-4d71-964b-68132500f285"
+                          "GUID": "f2865468-07b4-4ab2-8920-63958f779abd"
                         },
                         "Value": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -752,7 +752,7 @@
                         "BindingInfo": {
                           "TableName": "ymia_t_opcard_hachu",
                           "ColumnName": "発注コメント",
-                          "GUID": "b58e6015-8e3d-486f-a4dd-134facb48549"
+                          "GUID": "9a73efea-f879-46de-9e45-531be796cde5"
                         },
                         "Value": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -763,7 +763,7 @@
                         "BindingInfo": {
                           "TableName": "ymia_t_opcard_hachu",
                           "ColumnName": "社内コメント",
-                          "GUID": "e9bf41f6-3f99-4508-af82-ea839e707f8f"
+                          "GUID": "64481fb7-9407-406d-8b99-8c4d3c637ddb"
                         },
                         "Value": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -774,7 +774,7 @@
                         "BindingInfo": {
                           "TableName": "ymia_t_opcard_hachu",
                           "ColumnName": "Excel出力区分",
-                          "GUID": "ff96046d-8329-40a5-8672-d24086a38c19"
+                          "GUID": "a022df6a-d14c-4b79-8fb5-b49fcd6bd36b"
                         },
                         "Value": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -785,7 +785,7 @@
                         "BindingInfo": {
                           "TableName": "ymia_t_opcard_hachu",
                           "ColumnName": "現場発注担当",
-                          "GUID": "55181f18-798d-4fa2-bcee-e69a34380e67"
+                          "GUID": "c00df7c9-faa2-4139-bab0-28c0a5d3eb10"
                         },
                         "Value": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -796,7 +796,7 @@
                         "BindingInfo": {
                           "TableName": "ymia_t_opcard_hachu",
                           "ColumnName": "発注日時",
-                          "GUID": "5223f21b-ea15-4c22-baa9-9a16894e914c"
+                          "GUID": "55feaceb-dce8-4dfa-ba21-c47dcdb75bb2"
                         },
                         "Value": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -807,7 +807,7 @@
                         "BindingInfo": {
                           "TableName": "ymia_t_opcard_hachu",
                           "ColumnName": "今回発注数",
-                          "GUID": "f9b4a5a6-0e9d-409a-b672-1751cb0bb9ff"
+                          "GUID": "688f6845-86a2-4752-a07b-d53b0c92a5dd"
                         },
                         "Value": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -818,7 +818,7 @@
                         "BindingInfo": {
                           "TableName": "ymia_t_opcard_hachu",
                           "ColumnName": "発注数",
-                          "GUID": "d1182460-bf95-48cf-8ecc-239af3a21f2d"
+                          "GUID": "8692932b-2caf-4d94-9abf-8955b8dccd61"
                         },
                         "Value": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -829,7 +829,7 @@
                         "BindingInfo": {
                           "TableName": "ymia_t_opcard_hachu",
                           "ColumnName": "単位",
-                          "GUID": "1f5caf36-596f-4eb2-b05f-a6eec1ce0c9c"
+                          "GUID": "7cf5aa19-034f-4fc4-ba1c-895dbf5cebf0"
                         },
                         "Value": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -840,7 +840,7 @@
                         "BindingInfo": {
                           "TableName": "ymia_t_opcard_hachu",
                           "ColumnName": "発注日",
-                          "GUID": "6154d9d6-bf15-4f38-9042-5bce5f5e31c9"
+                          "GUID": "53924f22-2188-457e-a283-185f74648adc"
                         },
                         "Value": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -851,7 +851,7 @@
                         "BindingInfo": {
                           "TableName": "ymia_t_opcard_hachu",
                           "ColumnName": "希望納期",
-                          "GUID": "94da2fc9-f6c3-40cd-9533-24bce5383fdd"
+                          "GUID": "f608dd19-2094-46bf-819f-3065bf6d95ca"
                         },
                         "Value": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -862,7 +862,7 @@
                         "BindingInfo": {
                           "TableName": "ymia_t_opcard_hachu",
                           "ColumnName": "仕入先コード",
-                          "GUID": "edba6a71-15c4-4735-80ca-4b7dd56984bb"
+                          "GUID": "d0d1084e-e8e2-421a-9f37-1c36c8dd5e3f"
                         },
                         "Value": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -873,7 +873,7 @@
                         "BindingInfo": {
                           "TableName": "ymia_t_opcard_hachu",
                           "ColumnName": "仕入先名称",
-                          "GUID": "260a2385-cbb3-408e-bca0-57e7e9871ecf"
+                          "GUID": "bac3e6b3-a9ec-4f5e-9f96-a23e7a1dcf14"
                         },
                         "Value": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
@@ -884,11 +884,22 @@
                         "BindingInfo": {
                           "TableName": "ymia_t_opcard_hachu",
                           "ColumnName": "購買担当",
-                          "GUID": "9c5579e3-f423-457f-a574-48980af25ec4"
+                          "GUID": "d3915d11-ef93-4788-9483-c6f7fca23d85"
                         },
                         "Value": {
                           "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
                           "SerializeProperty": "=発注画面RM!J41"
+                        }
+                      },
+                      {
+                        "BindingInfo": {
+                          "TableName": "ymia_t_opcard_hachu",
+                          "ColumnName": "ロット数",
+                          "GUID": "296bd0e7-7eec-4a17-981a-163681b219da"
+                        },
+                        "Value": {
+                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                          "SerializeProperty": "=発注画面RM!F9"
                         }
                       }
                     ]
@@ -988,7 +999,7 @@
                     "MessageFormula": "発注情報を作成しました！！"
                   }
                 ],
-                "ID": "d891c4f0-560d-4343-bd9e-2ec1fffbfddb"
+                "ID": "846ffce9-05b5-46e7-b39f-80b1eacf292e"
               }
             ]
           }
@@ -2429,4 +2440,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//ZdzNba9uMVt5tk1OiJtl/iO6+gCUjuOZZxlDydK/4QhO1JSpbLxJ8JsWKTvbGCjqtu8HaiDJ6d3twJvPLzyNm37NnBNINjSw8IoKeb6uS1HAK6Pml4vhbeUleozi7fZ29oThVFbF5BbUAYBWlM6bT5KE0LmWijkBfUzpRYDkJCJ+VZDl45hCekGhGlDsKBgyj3LxYVQePwG4/KqW20w84fw9ppyWLi27nUbrLN8bQB9wtzOJv1T0hiUzD5p7Q6dlEXz3blPgiVPO9V2mT8z0XiKgStTD/N0HbC+5AEIEJDOFqtb1+Udfiwgkw0eZjeBz0epxqsyWbPRmhp+kXO7hZ8sPKma/76L/L3Q65ooKAijg6YBGkFZIF/cVzb3FpCtRXK0q1xvEPCLZ379LmOzv722eHbIJzNYPA6Q2yVh8Ve5YkYC4bKCUw4VKjaVMfS/feqxlm4RQ3f4NF3zYBpBAJwyxEaK847C/FM/B47VTDsVHiy4CMN7ovBSk0pyiNlD9DWPkV+DkwhzcEVZZ+0B7JZRgBldOwaIo8cXujCM5Q4Mby0RITp4niAkEnoGluODX6QCtz6GAL/2xtAJllKlOj62KY6aO1T8qOAhHua/JmaDxvpGmKnsxup2E5CftO24nnQ5PlTRhPEMbYMyU0BTq9dabOmQFOpvDEWu2NKw/c+mG3yq1fM1BhmJQf8i6UH0HJEDSDxkwtG8kwVvqbzU8VKj14MKDr3gDP6CD6uw2rX/fA/GrVV87whw5YXN6WifQ7bbMbAges5HFwrdODK4ndYQQzOeJba+SiwOE0F+n/QD7MG1PHpb41Bu7+ocNFmJtw0iSs5Ng+uV08ISAAwKXxSWhpouKTFKM6Bn6iLelEFQZwASt/+/1z+CpZP1+m+xU3OnCgFBH0j/K1adVzOb2vg==|920
+}//JcCf3gzGO0aCzHiOf60ArRJHoXP69/RkMHsYJHKsQOk3YrwcrPA8z6iJj4DW8ZTwfbcv/bB91ZB0G4vVT207a7kuMoZdz119kE+D1KZIOyPofwZ3AVDnk1ktzB94zS/zFRDSv4DrpU9aLID6umByAlsOtUAUMqbGlU0Ja2Tf3CoPxrbJzh/Fmqz8Al5GU+K+8X4VByrwdIEmGHLESvrLwvk0oJFTgpMdYT5wNh4ZzPF7ZirXSaeveh1fYOx4IBfQZ7fSnfXufs1hpc4zFUMKYipjAIf9pPRoiVjYPcB1xdO5mIe0XSf8Zadupv0l5TsZ/zQFFc7cVXpOGGV/1V/WnCARYjUOtj73KvO4AaxF/zsdU2xlvbCjHNtnXRMWyjIRmQ9RChNF6EDY77Z4tfzItmYYPjI2YsE0z6Pi29B6csZAaWqQD4JssP8/PymuRaervCWppyyc020xWXOe5PmOwr/80AgpiQXwYWxoypJ5M6lUBXgz143QP9kpdxRtagzk7OMyjRRpLNYnif0Nu0I9RrP9Sa2+EOUkaV73v/nH9sN2XcmzU6eQuCixD4txO2uCnvsfpvPTBXpRwzIpIwXF/jarrjPr4sDZm1ru6Lxy4zus1AGoS7YaZlxJaoU2hqwWt4Ar7WPA5utyU+wopg7Ki47ABUzE4qqLW7aOmNp7lbdFUbfgO32g3uOTvNXpy4gNi/LOeMi3BdHKBY1B3EDAt4jcgYKYAGdPKCiiGEkF4FEHWE0kStsS8t/ihojKKHTqzIBtG23PbBj0gCokrlHTfIyA2k2sR0ScgznMoNm0OK1OW6msDM8bF/iHIIWhO46teFrE1aDHH2jzJG/L1krbFn6qfQsy306B7+4WarJoKOqgBhPOmGpQAKsBvQOO/X4DGF1Sc9d85GUqvTyBosu7ew==|920

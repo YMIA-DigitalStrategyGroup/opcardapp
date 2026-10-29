@@ -202,7 +202,7 @@
       "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
       "DefaultValue": {
         "$type": "Forguncy.DateObject, ServerDesignerCommon",
-        "Value": "2026-10-29T18:28:45.913"
+        "Value": "2026-10-30T07:43:33.123"
       },
       "DatabaseColumnType": "datetime",
       "MaxLength": -1,
@@ -215,6 +215,13 @@
       "MaxLength": -1,
       "Name": "生産管理_注文番号",
       "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "int",
+      "MaxLength": -1,
+      "Name": "ロット数",
+      "ColumnType": "System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
     }
   ],
   "ExternalDatabaseInfo": {
