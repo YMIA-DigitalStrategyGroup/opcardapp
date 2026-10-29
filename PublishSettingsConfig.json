@@ -1,0 +1,30 @@
+[
+  {
+    "Name": "サーバーへ発行1",
+    "ApplicationUrl": "http://YMIADIGITALSV01/opcardapp",
+    "PublishSettings": {
+      "IsPrivateServer": true,
+      "ServerName": "YMIADIGITALSV01",
+      "UserName": "AA121806",
+      "SitePort": 80,
+      "AppName": "opcardapp",
+      "AppStartPage": "",
+      "TakeServeronline": true,
+      "PublishRolesToServer": true
+    }
+  },
+  {
+    "Name": "サーバーへ発行2",
+    "ApplicationUrl": "http://YMIADIGITALSV01/opcardappbarcode",
+    "PublishSettings": {
+      "IsPrivateServer": true,
+      "ServerName": "YMIADIGITALSV01",
+      "UserName": "AA121806",
+      "SitePort": 80,
+      "AppName": "opcardappbarcode",
+      "AppStartPage": "",
+      "TakeServeronline": true,
+      "PublishRolesToServer": true
+    }
+  }
+]

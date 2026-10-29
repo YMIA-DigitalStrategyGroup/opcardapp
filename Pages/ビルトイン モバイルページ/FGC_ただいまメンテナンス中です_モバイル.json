@@ -1,0 +1,70 @@
+{
+  "Rows": {
+    "Count": 25
+  },
+  "Cols": {
+    "Count": 18
+  },
+  "Values": {
+    "2,2": "ただいまメンテナンス中です",
+    "6,2": "現在メンテナンスを行っているため、目的のサイトにアクセスできません。",
+    "10,2": "ご迷惑をおかけしますが、お時間をおいて後ほどアクセスしてください。"
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 21.33333396911621,
+        "Foreground": 0,
+        "Formatter": 1,
+        "HorizontalAlignment": 2,
+        "VerticalAlignment": 3
+      },
+      {
+        "FontSize": 16.0,
+        "FontWeight": 4,
+        "Foreground": 5,
+        "Formatter": 1,
+        "WordWrap": true
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Accent 1 -50",
+        "[AUTO]General",
+        "Center",
+        "Bottom",
+        "Bold",
+        "#FF7F7F7F",
+        "Body",
+        "#FF000000"
+      ]
+    },
+    "CellStyles": {
+      "2,2": 0,
+      "6,2": 1,
+      "10,2": 1
+    },
+    "SheetStyle": {
+      "FontFamily": 6,
+      "FontSize": 13.333333015441895,
+      "Foreground": 7
+    }
+  },
+  "Spans": [
+    "2,2,2,14",
+    "6,2,4,14",
+    "10,2,3,14"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "Title": "ただいまメンテナンス中です",
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "IsBuiltInPage": true,
+    "IsMobilePage": true
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//kELnSUfvxO6DmNblDnB4SoRzMnEH+/gIfDEf4h1doXPq3sBlhB0jZM2dDSBsV5ZKcE1usRbR0yxFr5HNY6ME6zvXZTShIKFb2clRTrKuigY0AebzRQkCokp4xs8LELYNF05vhCyrjIUNQLK+MKTqqUBps9+bGNkEbP2ZsPm8AOr/vVMgoEaEe2EAmiJw1TZkiqB1SxrVsVuNqGXtsxWAuoPh7rp7Lx8fdG8Eszj3Z59IWxBLqq1vY+IGYt5ABTOEKurpS5v3DjR8ZAiKG9kyW8HSvaeGDWmHfkS9ZcsYNvy/tV+JbVe1cjDQZ6kyvuRIU324YJROSPsaw9W0iMf3t0NxEY8FQa3LVpBoVTritvSHRa0flNGOYX52VgWW7oIiDXCfHM3bB8PyIDsx36x3iBhF3DP1/wvE7XbKoaDGm01dBK3FzgdLRoGghFxaTGyOYc0hAoTZ8ayga/C5BDGZN29z1CypWzJCZ59dckI/EEA8syj+ybL94+yAQS5dBgd4WKt5IcLbeBpc7VK26UODGyvAYO96NV/4ZU0yGlO0hpjhlrRY2zqPrY1bIYrY8w43RPsul0hoDAuM3xnawHzCrca7jVR3pe5HVyQqp+cTvcvf9axpscMWs2L3Ut/BdZ+OZ7Bmbp6k0Thu2t+Vpzzdn9OobEAM0kH10/FCvin4qn7E37IwiY7S42jjlY7s92zIBcmP5ROgMgbVBdtQLdqEouiayPGN2vnE73kBeWfOUxl2D0WiprAheRyl+cQdLOe5GsAt6Ra0NcVPa9G5blmxOr3yLdVQmzW8mE5s2PIm8iMeQjlxJwud95MHxb0faEJbMh9imONuz1ErXyclQiXnoux9KRJW2twb61mLGNHg7p8HJqP0RdM9/b0iR5coHBxEvhSEq5DXQwIyMm6/l38Y7g==|920

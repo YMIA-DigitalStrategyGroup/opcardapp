@@ -1,0 +1,189 @@
+{
+  "Rows": {
+    "Count": 28
+  },
+  "Cols": {
+    "Count": 18
+  },
+  "Values": {
+    "0,3": "OPカード発注アプリ"
+  },
+  "Formulas": {
+    "1,3": "TODAY()"
+  },
+  "AttachInfos": {
+    "0,14": {
+      "CellType": {
+        "$type": "Forguncy.CurrentUserCellType, ServerDesignerCommon",
+        "CellCustomValue": "%CurrentUser%",
+        "ShowCircleUserPicture": true,
+        "NavigateSettingWhenLogout": {
+          "NavigateWhenLogoutMode": 1
+        }
+      }
+    },
+    "2,0": {
+      "IsPlaceHolderCell": true
+    },
+    "25,0": {
+      "CellType": {
+        "$type": "Forguncy.CustomMenu.ForguncyIconMenuCellType, Forguncy.CustomMenu",
+        "Items": [
+          {
+            "Value": "発注",
+            "Text": "発注",
+            "IconPath": "Navigation/250_cart_3.svg",
+            "SelectedIconColor": "Background 1",
+            "SelectedIconColorUseItemColor": true,
+            "IconColorUseItemColor": true,
+            "IsDefaultItem": true,
+            "IsOldMenuPath": false,
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                "NavigateType": "back"
+              }
+            ],
+            "CanVisitRoleList": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Value": "発注一覧",
+            "Text": "発注一覧",
+            "IconPath": "Application/131_list_3.svg",
+            "SelectedIconColor": "Background 1",
+            "SelectedIconColorUseItemColor": true,
+            "IconColorUseItemColor": true,
+            "IsOldMenuPath": false,
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                "PageName": "発注一覧"
+              }
+            ],
+            "CanVisitRoleList": [
+              "FGC_Anonymous"
+            ]
+          },
+          {
+            "Value": "注文残",
+            "Text": "注文残",
+            "IconPath": "Application/150_paste_2.svg",
+            "SelectedIconColor": "Background 1",
+            "SelectedIconColorUseItemColor": true,
+            "IconColorUseItemColor": true,
+            "IsOldMenuPath": false,
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+                "PageName": "注文残一覧"
+              }
+            ],
+            "CanVisitRoleList": [
+              "FGC_Anonymous"
+            ]
+          }
+        ],
+        "Orientation": 0,
+        "MenuLevelsStyle": [
+          {
+            "BackColor": "#FFFFFF",
+            "ForeColor": "Background 1 -35",
+            "SelectedBackColor": "Background 1 0",
+            "SelectedForeColor": "Accent 1 0",
+            "FontSize": 11.0,
+            "Bold": true,
+            "Height": 55.0,
+            "IconHeight": 32.0,
+            "IconWidth": 32.0
+          }
+        ]
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "HorizontalAlignment": 0
+      },
+      {
+        "FontFamily": 1
+      },
+      {
+        "Formatter": 2,
+        "HorizontalAlignment": 3
+      },
+      {
+        "Background": 4
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 10.666666666666666
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Center",
+        "Body",
+        "yyyy/m/d",
+        "Right",
+        "Accent 1 80"
+      ]
+    },
+    "CellStyles": {
+      "0,3": 0,
+      "0,14": 1,
+      "0,15": 1,
+      "1,3": 2,
+      "1,14": 1,
+      "1,15": 1
+    },
+    "RowStyles": {
+      "0": 3,
+      "1": 3,
+      "25": 4,
+      "26": 4,
+      "27": 4
+    },
+    "SheetStyle": {
+      "FontFamily": 1
+    }
+  },
+  "Spans": [
+    "2,0,23,18",
+    "25,0,3,18",
+    "0,14,2,2",
+    "0,3,1,11",
+    "1,3,1,11"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.MasterPage, ServerDesignerCommon",
+    "PageLoadedCommandList": [],
+    "IsMobilePage": true
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "Pictures": [
+    {
+      "Name": "8361427a-838b-4bcb-b4c2-73ffd569ee1d.png",
+      "ForguncyPictureName": "logo.png",
+      "ForguncyPictureSourceType": 0,
+      "Stretch": 2,
+      "Location": "0,2",
+      "Size": "58,35"
+    }
+  ],
+  "BackgroundPictures": [
+    {
+      "Name": "475ed418-ecb5-44e5-9243-064b15ab14e4",
+      "DisplayName": "背景画像1",
+      "ForguncyPictureName": "MobileMasterBanner",
+      "ForguncyPictureSourceType": 2,
+      "Stretch": 3,
+      "Size": "360,40"
+    }
+  ]
+}//ALsa+hw/QbEMYN5iwmbubfOEwuw4K89Y7HCyvvGNN8GuVniW7+MRZg6kex7Z4Ib2POzzQXnCxLg3H0XsGz8o9zvj7JjfT3XAZoC2ORWINDx7CqT4n7XECQz1jfO9OvAucsC0O9DWo4H5IXrrGxNxxi/Mub8grZCvcpk+YECYcL67ps/RapT3w4vcsvvwTsvN9A+1nkTraEmF+G9WySr0045iAqYAe/Ahl1Hl4Mf5AqL48Zj+sshIvPh7iWV1MN7cXqW/CT2BiFvsYG/P6GpoknSgCpXS4CZyGWeCq8PkFgBPthdJW/+rfMNlQs08EazKUugA9Yq6NvjqYbeg94vQSiBrC8/BbT+KWColMqtI/Rqv5gqPQzZw1gw/QvlLQmVuix6eUohwjj3tkTB+Qqd8J5u4c3jD0QgHbk3jWBO6MRjmB1aOloRlBXVqj3nL/JAFZ6G8ldA5iv2ArxdBwhBHFBrdHnof5p6GDHVzvnBjQfW07Gf4WtopPmfsaEQX7MwYAwnU9xiKrB8L1EpwsJZcCgeqC7mHB3gPnoke0bvNr4MgdEzasHs+0xhovPsWsMFQbywbDibYNqo7BX85QI3qwagoJ3MLOIrJvMDQOJaFOWLjDIY/+ahyjTtney/s+X3nCDWLdK7p6FRMfO9km7lIsbuAy4C1MCmkTG3zf32+sU+KR6deigLW7nzTSJbuEh46n3iDElCz+IPD+0mvCC4VjEYbGns+c9ncdpchA6xcqicI2IXWS1MMHc4fWQDrjOtxzmf7GIxCMVVpqy4jok8Zm3Zbjbb2Wi76AIDtyHUkOO/BOvsd2sg0lKTVqPXxj20IV6/FxA+/gpFTmdnzQcAiv+Bpi97vSYXmThxnCbTyZuP84uO5jbMEMd3DQeImeUwAKC6rC0To/0HfaXfyEAOiyQ==|920

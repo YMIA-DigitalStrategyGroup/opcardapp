@@ -1,0 +1,680 @@
+{
+  "Rows": {
+    "InLogicalVisibleIndexes": [
+      0,
+      1
+    ],
+    "Count": 26
+  },
+  "Cols": {
+    "InLogicalVisibleIndexes": [
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29
+    ],
+    "Count": 30
+  },
+  "Values": {
+    "0,0": "注文残・納入実績一覧画面",
+    "3,0": "部品",
+    "3,11": "検索",
+    "3,13": "",
+    "3,15": "クリア",
+    "4,0": "番号",
+    "6,0": "注文日",
+    "6,4": "希望納期",
+    "6,9": "注文数量",
+    "6,12": "回答納期",
+    "6,17": "部品コード",
+    "6,23": "表示モード",
+    "19,0": "希望納期",
+    "19,4": "納入日",
+    "19,8": "納入数",
+    "24,0": "閉じる"
+  },
+  "Formulas": {
+    "5,2": "TRIM(C4)",
+    "7,12": "ODATA(\"ymia_t_opcard_hachu?$select=回答納期&$filter=部品コード eq \"&IF(ISBLANK(C4),\"null\",\"'\"&C4&\"'\")&\" and 発注日 eq \"&IF(ISBLANK(A8),\"null\",TEXT(A8,\"yyyy-MM-ddThh:mm:ssZ\"))&\" and 発注点 eq \"&IF(ISBLANK(J8),\"null\",J8))"
+  },
+  "AttachInfos": {
+    "3,0": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "CellDefaultValue": "部品",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "3,2": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "3,11": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "thatchum",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "thatchum",
+                "ColumnName": "HINBAN",
+                "GUID": "611dd789-6cea-472a-b8bf-a73adb7e27f0"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=注文残一覧!C4"
+              }
+            },
+            "ID": "09563d1e7ab74dc982aa298d44c4f353"
+          },
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "tukeire",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "tukeire",
+                "ColumnName": "DENPYO_NBR",
+                "GUID": "c358b841-bfd1-460d-bd13-8f6006605df4",
+                "RelationBinding": {
+                  "RelatedTable": "thatchum",
+                  "RelatedColumn": "DENPYO_NBR",
+                  "DisplayColumn": "HINBAN"
+                }
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=注文残一覧!C4"
+              }
+            },
+            "ID": "74e33f2952da42ef8be4d3d7eecd26c1"
+          }
+        ],
+        "Text": "検索",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "3,13": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "SmartPhoneCommand.SmartPhoneCommand, SmartPhoneCommand",
+            "TargetCell": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=注文残一覧!C4"
+            }
+          }
+        ],
+        "TemplateKey": "_RS_Normal_Style2",
+        "Icon": {
+          "Name": "Application/141_camera_2.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "3,15": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=注文残一覧!C4"
+                }
+              }
+            ]
+          }
+        ],
+        "Text": "クリア",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "6,0": {
+      "ListViewInfo": {
+        "Name": "リストビュー1",
+        "TableName": "thatchum",
+        "RowIndex": 6,
+        "RowCount": 12,
+        "ColumnCount": 18,
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2,
+        "FrozenIndex": 1,
+        "FrozenIndexEnd": 4,
+        "DoNotLoadDataWhenLoadPage": true
+      }
+    },
+    "7,0": {
+      "BindingInfo": {
+        "TableName": "thatchum",
+        "ColumnName": "HATCHU_NBR",
+        "GUID": "eb35fd25-e79a-4ef1-98c6-9b1837c9bf46",
+        "RelationBinding": {
+          "RelatedTable": "thatchu",
+          "RelatedColumn": "HATCHU_NBR",
+          "DisplayColumn": "HATCHU_DATE"
+        }
+      }
+    },
+    "7,4": {
+      "BindingInfo": {
+        "TableName": "thatchum",
+        "ColumnName": "HATCHU_NBR",
+        "GUID": "cc3750cf-02a0-4da2-819f-ce9f7d2f4ecb",
+        "RelationBinding": {
+          "RelatedTable": "thatchu",
+          "RelatedColumn": "HATCHU_NBR",
+          "DisplayColumn": "NOKI"
+        }
+      }
+    },
+    "7,9": {
+      "BindingInfo": {
+        "TableName": "thatchum",
+        "ColumnName": "SURYO",
+        "GUID": "42e5c143-bdda-4a0f-a12b-46a1b8a1fe46"
+      }
+    },
+    "7,17": {
+      "BindingInfo": {
+        "TableName": "thatchum",
+        "ColumnName": "HINBAN",
+        "GUID": "8b4842a8-0406-414c-a5ef-59672bc8048a"
+      }
+    },
+    "19,0": {
+      "ListViewInfo": {
+        "Name": "リストビュー2",
+        "TableName": "tukeire",
+        "RowIndex": 19,
+        "RowCount": 4,
+        "ColumnCount": 18,
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "20,0": {
+      "BindingInfo": {
+        "TableName": "tukeire",
+        "ColumnName": "DENPYO_NBR",
+        "GUID": "f5325ebe-2c92-4b28-8df5-d255d2eb0794",
+        "RelationBinding": {
+          "RelatedTable": "thatchum",
+          "RelatedColumn": "DENPYO_NBR",
+          "DisplayColumn": "HATCHU_NBR",
+          "NextRelationBinding": {
+            "RelatedTable": "thatchu",
+            "RelatedColumn": "HATCHU_NBR",
+            "DisplayColumn": "NOKI"
+          }
+        }
+      }
+    },
+    "20,4": {
+      "NameUsedInJavaScript": "_Z02020",
+      "BindingInfo": {
+        "TableName": "tukeire",
+        "ColumnName": "UKEIRE_DATE",
+        "GUID": "b5b6577f-6cf1-438a-9e75-34f49794c68a"
+      }
+    },
+    "20,8": {
+      "NameUsedInJavaScript": "_Z02030",
+      "BindingInfo": {
+        "TableName": "tukeire",
+        "ColumnName": "UKEIRE_SU",
+        "GUID": "e3c552be-3824-40cf-a7eb-3e3b6e70acda"
+      }
+    },
+    "20,12": {
+      "NameUsedInJavaScript": "_Z02040"
+    },
+    "20,16": {
+      "NameUsedInJavaScript": "_Z02050"
+    },
+    "24,0": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon"
+          }
+        ],
+        "Text": "閉じる",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Background": null
+      },
+      {
+        "Background": 0,
+        "FontFamily": 1,
+        "Formatter": 2,
+        "HorizontalAlignment": 3,
+        "WordWrap": true,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "ShrinkToFit": true
+      },
+      {
+        "FontFamily": 1,
+        "BorderTop": 0
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 2,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 1,
+        "BorderTop": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 1
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 14.67
+      },
+      {
+        "Background": 5,
+        "FontFamily": 1
+      },
+      {
+        "Background": 0,
+        "FontFamily": 1,
+        "HorizontalAlignment": 3,
+        "BorderBottom": 0,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 1,
+        "BorderBottom": 0
+      },
+      {
+        "FontFamily": 1,
+        "BorderBottom": 0,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 1,
+        "BorderBottom": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 1,
+        "Foreground": 6
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 13.333333333333332
+      },
+      {
+        "Background": 7,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "Formatter": 8,
+        "HorizontalAlignment": 3,
+        "ShrinkToFit": true
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 8,
+        "HorizontalAlignment": 3,
+        "ShrinkToFit": true
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 13.333333333333332,
+        "HorizontalAlignment": 9,
+        "ShrinkToFit": true
+      },
+      {
+        "Background": null,
+        "FontFamily": 1,
+        "FontSize": 13.333333333333332,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontSize": 13.333333333333332
+      },
+      {
+        "FontSize": 13.333333333333332,
+        "Formatter": 8,
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontSize": 13.333333333333332,
+        "HorizontalAlignment": 9
+      },
+      {
+        "Background": 0,
+        "FontSize": 16.0,
+        "FontWeight": 10,
+        "HorizontalAlignment": 3
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Accent 3 80",
+        "Body",
+        "@",
+        "Center",
+        "black",
+        "Accent 2 -50",
+        "Background 1 0",
+        "Accent 4 80",
+        "yyyy/m/d",
+        "Right",
+        "Bold"
+      ],
+      "Borders": [
+        {
+          "Color": 4
+        }
+      ]
+    },
+    "CellStyles": {
+      "0,18": 0,
+      "0,19": 0,
+      "0,20": 0,
+      "0,21": 0,
+      "0,22": 0,
+      "0,23": 0,
+      "0,24": 0,
+      "0,25": 0,
+      "0,26": 0,
+      "0,27": 0,
+      "0,28": 0,
+      "0,29": 0,
+      "1,18": 0,
+      "1,19": 0,
+      "1,20": 0,
+      "1,21": 0,
+      "1,22": 0,
+      "1,23": 0,
+      "1,24": 0,
+      "1,25": 0,
+      "1,26": 0,
+      "1,27": 0,
+      "1,28": 0,
+      "1,29": 0,
+      "3,0": 1,
+      "3,1": 2,
+      "3,2": 3,
+      "3,3": 2,
+      "3,4": 2,
+      "3,5": 2,
+      "3,6": 2,
+      "3,7": 2,
+      "3,8": 2,
+      "3,9": 2,
+      "3,10": 4,
+      "3,11": 5,
+      "3,12": 5,
+      "3,13": 6,
+      "3,14": 5,
+      "3,15": 7,
+      "3,18": 5,
+      "3,19": 5,
+      "3,20": 5,
+      "3,21": 5,
+      "3,22": 5,
+      "3,23": 5,
+      "3,24": 5,
+      "3,25": 5,
+      "3,26": 5,
+      "3,27": 5,
+      "3,28": 5,
+      "4,0": 8,
+      "4,1": 9,
+      "4,2": 10,
+      "4,3": 9,
+      "4,4": 9,
+      "4,5": 9,
+      "4,6": 9,
+      "4,7": 9,
+      "4,8": 9,
+      "4,9": 9,
+      "4,10": 11,
+      "4,11": 5,
+      "4,12": 5,
+      "4,13": 5,
+      "4,14": 5,
+      "4,18": 5,
+      "4,19": 5,
+      "4,20": 5,
+      "4,21": 5,
+      "4,22": 5,
+      "4,23": 5,
+      "4,24": 5,
+      "4,25": 5,
+      "4,26": 5,
+      "4,27": 5,
+      "4,28": 5,
+      "5,2": 12,
+      "5,3": 5,
+      "5,4": 5,
+      "5,5": 5,
+      "5,6": 5,
+      "5,7": 5,
+      "5,8": 5,
+      "5,9": 5,
+      "5,10": 5,
+      "6,4": 13,
+      "6,23": 14,
+      "6,24": 15,
+      "6,25": 15,
+      "6,26": 15,
+      "6,27": 15,
+      "6,28": 15,
+      "6,29": 15,
+      "7,0": 16,
+      "7,4": 17,
+      "7,9": 18,
+      "7,23": 19,
+      "7,24": 19,
+      "7,25": 19,
+      "7,26": 19,
+      "7,27": 19,
+      "7,28": 19,
+      "7,29": 19,
+      "19,0": 20,
+      "19,4": 20,
+      "19,8": 20,
+      "19,12": 20,
+      "19,16": 20,
+      "20,0": 21,
+      "20,4": 21,
+      "20,8": 22,
+      "20,12": 20,
+      "20,16": 20
+    },
+    "RowStyles": {
+      "0": 23,
+      "1": 23,
+      "6": 20,
+      "7": 20
+    },
+    "ColStyles": {
+      "22": 0,
+      "23": 0,
+      "24": 0,
+      "25": 0,
+      "26": 0,
+      "27": 0,
+      "28": 0,
+      "29": 0
+    },
+    "SheetStyle": {
+      "FontFamily": 1
+    }
+  },
+  "Spans": [
+    "3,0,1,2",
+    "4,0,1,2",
+    "3,2,2,9",
+    "3,11,2,2",
+    "3,13,2,2",
+    "24,0,2,18",
+    "0,0,2,18",
+    "3,15,2,3",
+    "6,23,1,7",
+    "7,23,1,7",
+    "8,0,10,18",
+    "5,2,1,9",
+    "21,0,2,18",
+    "7,0,1,4",
+    "6,0,1,4",
+    "7,4,1,5",
+    "6,4,1,5",
+    "7,9,1,3",
+    "6,9,1,3",
+    "7,12,1,5",
+    "6,12,1,5",
+    "20,0,1,4",
+    "19,0,1,4",
+    "20,4,1,4",
+    "19,4,1,4",
+    "20,8,1,4",
+    "19,8,1,4",
+    "20,12,1,4",
+    "19,12,1,4",
+    "20,16,1,2",
+    "19,16,1,2"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "MasterPageName": "opカード発注",
+    "PageLoadedCommandList": [
+      {
+        "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+        "ConditionAndCommandPairList": [
+          {
+            "Condition": {
+              "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+              "param": {
+                "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                "cellLocations": [
+                  {
+                    "SerializeProperty": "=注文残一覧!X8"
+                  }
+                ]
+              },
+              "value": "ポップアップ"
+            },
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
+                "PropertyItemsList": [
+                  {
+                    "Location": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=注文残一覧!25:26"
+                    },
+                    "Value": true
+                  }
+                ]
+              }
+            ],
+            "ID": "2b1f3e20-d75e-44a6-b4ec-ad1fd2fb8297"
+          },
+          {
+            "CommandList": [
+              {
+                "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
+                "PropertyItemsList": [
+                  {
+                    "Location": {
+                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                      "SerializeProperty": "=注文残一覧!25:26"
+                    },
+                    "Value": false
+                  }
+                ]
+              }
+            ],
+            "ID": "15aa0432-080a-476a-959d-80dad1cef248"
+          }
+        ]
+      }
+    ],
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "IsMobilePage": true,
+    "RelatedDataTableName": "部品マスタ_集約版"
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//fTaLX2eWXDCwOTXAlLx3b0h3LoFi6I4dalJ581m3lYWI8icQOzSu+OMQ2XNyJWpArcuRC8ZvdSnYI6vjYxkEkDDCFFOSPCAP2vnTae55g5nZ+qUuT07MwfhBpzBe+fAej7XGoCtU4uUzGbnsci3L+a/wp5pzZYx/b7wOrdYOjMW6r9yY9DbjjLuxpWk/ZGNH3eaDZ3HBDjQU8G5cFG6PlF+yQTxQ0whtypCP9scph1POXVJ6D96bpeuAHJ2yIOxf63rkbsf2phBAahilydvzw2dnO+n5SXXfY374dekoxHBA+gaOcLjV9G8SiT0FCs5w2FuqLOtz6rU+MD3DwwT+pTZmUk+IOFYgOay0UgU88gZ4JfTOUtazHSvChZq3Q9VdxLgOtzcSEp+rPFpbGMs1/nDy/wqSmNLQpPBsjYjVFzunPsPMfHl6oA++okHZE5NnLUwva9wQoOjdt2V0AExveyUAi76C2atWhdwfpT7ws5qQneQrPMDsuLvuvnxEUV3mp+gMuUjdDF3S90i91t5FW1UG8FiQfuIPkgy2UwJCCLBiqnWLbgBtiN+aE4CL+93wV11Zz48tmND0RLLoPloyBR5QCpve1iJUI+3KCYq+/8ODBHOhWymMa6M6jxQ9WCkbqCDL2V+6lXzRMqNOGGh6aDKg6STUpOagEHkEbQAEApKBmOWHjYP0bFlIoiZE9+UfMm+63pwPtQWp0ijQeUNO98jBZHaQaKi/uOU1ec63QvWagYVepkEoAQTea+FQ9VidFW55hRiJ0sS0bSojK4i25q40EGTunprkoomxc7bDNWirggvr7KGYApKuVg8iwGSNTq5DcL+vAt2bgzTs62gHPTJGP4Mi2/yfu1AP6ZLZAy+Y3Pd4qLUOYXYu5n1p+vluhFnOMScw0dTKxwBCy7W6mg==|920

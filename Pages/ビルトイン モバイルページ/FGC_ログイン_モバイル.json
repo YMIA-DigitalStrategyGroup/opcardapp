@@ -1,0 +1,417 @@
+{
+  "Rows": {
+    "Count": 27
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25
+    ],
+    "Count": 26
+  },
+  "Values": {
+    "7,0": "OPカード発注アプリ",
+    "18,3": "ログイン",
+    "21,3": "パスワードを忘れた場合",
+    "23,3": "バーコード",
+    "23,11": "UID/PASS\r\n設定",
+    "25,1": "管理者から付与されたアカウントを使用してログインすることができます。"
+  },
+  "Formulas": {
+    "19,18": "LEFT(S19,FIND(\"%\",S19)-1)",
+    "20,18": "RIGHT(S19,LEN(S19)-FIND(\"%\",S19))"
+  },
+  "AttachInfos": {
+    "10,3": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "Icon": {
+          "Name": "Navigation/169_user_2.svg",
+          "BuiltIn": true,
+          "Color": "#FF7F7F7F"
+        },
+        "IconSize": 18.0,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "ユーザー名",
+        "ForguncyAttribute": "LogIn_Username"
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false
+      }
+    },
+    "13,3": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "ShowPassword": true,
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "Icon": {
+          "Name": "Application/078_lock_1.svg",
+          "BuiltIn": true,
+          "Color": "#FF7F7F7F"
+        },
+        "IconSize": 18.0,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "WaterMark": "パスワード",
+        "ForguncyAttribute": "LogIn_Password"
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false
+      }
+    },
+    "16,3": {
+      "CellType": {
+        "$type": "Forguncy.CheckBoxCellType, ServerDesignerCommon",
+        "Caption": "ログインしたままにする",
+        "Style": 1,
+        "ForguncyAttribute": "LogIn_RememberMe"
+      }
+    },
+    "18,3": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "Text": "ログイン",
+        "AutoExecute": true,
+        "TemplateKey": "_RS_Normal_Style2",
+        "ForguncyAttribute": "LogIn_Button"
+      }
+    },
+    "21,3": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "PageName": "FGC_パスワードを忘れた場合_モバイル"
+          }
+        ],
+        "Text": "パスワードを忘れた場合"
+      }
+    },
+    "23,3": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "NavigateType": "back",
+            "Disabled": true
+          },
+          {
+            "$type": "SmartPhoneCommand.SmartPhoneCommand, SmartPhoneCommand",
+            "TargetCell": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=FGC_ログイン_モバイル!S19"
+            }
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=FGC_ログイン_モバイル!D11"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=FGC_ログイン_モバイル!USERID"
+                }
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=FGC_ログイン_モバイル!D14"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=FGC_ログイン_モバイル!PASSWORD"
+                }
+              }
+            ],
+            "Disabled": true
+          }
+        ],
+        "Text": "バーコード",
+        "TemplateKey": "_RS_Normal_Style2",
+        "Icon": {
+          "Name": "Mobile/433_qr_code_2.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        },
+        "IconSize": 24.0
+      }
+    },
+    "23,11": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=FGC_ログイン_モバイル!D11"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=FGC_ログイン_モバイル!S20"
+                }
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=FGC_ログイン_モバイル!D14"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=FGC_ログイン_モバイル!S21"
+                }
+              }
+            ]
+          }
+        ],
+        "Text": "UID/PASS\r\n設定",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 13.333333015441895,
+        "Foreground": 0
+      },
+      {
+        "FontSize": 21.33333396911621,
+        "Foreground": 1,
+        "Formatter": 2,
+        "HorizontalAlignment": 3,
+        "VerticalAlignment": 4
+      },
+      {
+        "FontSize": 13.333333015441895,
+        "Formatter": 5,
+        "Underline": false,
+        "Strikethrough": false
+      },
+      {
+        "FontSize": 13.333333015441895,
+        "Foreground": 6
+      },
+      {
+        "FontSize": 16.0,
+        "FontWeight": 7,
+        "Formatter": 2,
+        "Underline": false,
+        "Strikethrough": false
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "Background": 9,
+        "FontFamily": 10,
+        "Underline": false,
+        "Strikethrough": false,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontSize": 13.333333015441895,
+        "Foreground": 11,
+        "Formatter": 2,
+        "HorizontalAlignment": 3,
+        "Underline": true,
+        "Strikethrough": false
+      },
+      {
+        "FontSize": 13.333333015441895,
+        "Foreground": 6,
+        "Formatter": 2,
+        "HorizontalAlignment": 3,
+        "Underline": false,
+        "Strikethrough": false
+      },
+      {
+        "Background": 12,
+        "FontWeight": 7
+      },
+      {
+        "Background": 12,
+        "FontWeight": 7,
+        "WordWrap": true
+      },
+      {
+        "FontSize": 12.0,
+        "Foreground": 6,
+        "Formatter": 2,
+        "HorizontalAlignment": 3,
+        "WordWrap": true
+      },
+      {
+        "Background": 9
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "#FF000000",
+        "Accent 1 -50",
+        "[AUTO]General",
+        "Center",
+        "Top",
+        "@",
+        "#FF7F7F7F",
+        "Bold",
+        "black",
+        "Background 1 -15",
+        "Body",
+        "#FF538BD5",
+        "#FF00B050"
+      ],
+      "Borders": [
+        {
+          "Color": 8
+        }
+      ]
+    },
+    "CellStyles": {
+      "2,4": 0,
+      "7,0": 1,
+      "10,3": 2,
+      "13,3": 2,
+      "16,3": 3,
+      "18,3": 4,
+      "18,18": 5,
+      "18,19": 5,
+      "18,20": 5,
+      "18,21": 5,
+      "18,22": 5,
+      "18,23": 5,
+      "18,24": 5,
+      "18,25": 5,
+      "19,18": 6,
+      "19,19": 6,
+      "19,20": 6,
+      "19,21": 6,
+      "19,22": 6,
+      "19,23": 6,
+      "19,24": 6,
+      "19,25": 6,
+      "20,18": 6,
+      "20,19": 6,
+      "20,20": 6,
+      "20,21": 6,
+      "20,22": 6,
+      "20,23": 6,
+      "20,24": 6,
+      "20,25": 6,
+      "21,3": 7,
+      "22,3": 7,
+      "23,1": 8,
+      "23,3": 9,
+      "23,11": 10,
+      "25,1": 11,
+      "25,18": 11,
+      "25,19": 11,
+      "25,20": 11,
+      "25,21": 11,
+      "25,22": 11,
+      "25,23": 11,
+      "25,24": 11,
+      "26,18": 11,
+      "26,19": 11,
+      "26,20": 11,
+      "26,21": 11,
+      "26,22": 11,
+      "26,23": 11,
+      "26,24": 11
+    },
+    "ColStyles": {
+      "18": 12,
+      "19": 12,
+      "20": 12,
+      "21": 12,
+      "22": 12,
+      "23": 12,
+      "24": 12,
+      "25": 12
+    },
+    "SheetStyle": {
+      "FontFamily": 10,
+      "Underline": false,
+      "Strikethrough": false
+    }
+  },
+  "Spans": [
+    "16,3,1,13",
+    "25,1,2,17",
+    "10,3,2,13",
+    "13,3,2,13",
+    "18,3,2,13",
+    "21,3,1,13",
+    "7,0,2,18",
+    "18,18,1,8",
+    "19,18,1,8",
+    "20,18,1,8",
+    "23,3,2,7",
+    "23,11,2,5"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "Title": "ログイン",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "IsBuiltInPage": true,
+    "IsMobilePage": true
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "Pictures": [
+    {
+      "Name": "e42042d2-8a6f-4f85-95e9-062572601249.png",
+      "ForguncyPictureName": "logo.png",
+      "ForguncyPictureSourceType": 0,
+      "Stretch": 2,
+      "Location": "62,38",
+      "Size": "236,81"
+    }
+  ]
+}//F6YPFHw5XCDSMJ8PWFKxi0lWqBKl3AIEPpMEtCeeYXdQzv0hrLwwcRs6xeAkhDxRZShMwTIQ7Tl/muT75W3IGAoV8r6+Irhvzi5TBAaumMDy2RMk4Ak+bPVZKivXl/tASjfM+Qfs0jMYE973CH/CZMYb6IjtbQjBRY2mmFdoB1PiUukmvVRP7spsl0wj0hGs8UzM8ciDGxAiJQlHPsvc30B4wTHMAhyxz2GJcgCB5gdl4Ef3k59F/uh/mnHhYTt59QBQ5gqOHXIRs+k2Tas9JSdwO4mDzp9a4sPysdy5v8n9wLpqCtZRN3GKpxc3tqWLQknXoyfvCW4ASYpH1Q8vWgXZY9ZwTs4TklvSFjeZWcQv12agKuAaHAfEODExaDdJriL4KqqSe7Q3d5H4qwDaM2IRhzep+ol9rsK/Hx5YKH9H9zq7tgrqVm0DIV9SL3saWRAWbeXxBLwKIkKTi/agE+R4tUfdZUUCq01UABYH1m4VOjdKLnUGcgfEWn6v520tK9u6YdKOZ5D3j+fRmYrEvVyyhkJy05pJmuPSi1Pk9bSzSr04HoSSGRfJdG0zrObcJyXuwa+c6kwXP5Gm3ft/p0TnPWlGMzXN3PxOAx4g8ttI6RKKgvYXnOwF5Q5zMOvDlCAX0YWBNuNYCcFfzlwD0SuLsrU7D8Fazt5nTYOT6d4iMaLuBfaxVoYvmR9U/EUzXBBjEgpI3fXP1xgq629Mh+vKhELfGZHE7oLT1Mavhijfx74W1d5daGojZKHJTwx3ZFvDeYG88uXVrIz/nrdafF55qSiYF3AxUxq8+PnjD7wAhhod0T9U1HkMyeUQdoIJVHvxNfTOj2PDH6phVGmnsPCKGdPBeU6ALFLOsKoHPr+kydiDWT32D+9uWerHNc6hIC/pmcwT5d1uZTQavGQe2A==|920

@@ -1,0 +1,103 @@
+{
+  "Name": "ymia_v_hinban_leadtime",
+  "Columns": [
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "Unique": true,
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 20,
+      "Name": "品番",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 50,
+      "Name": "品名",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "int",
+      "MaxLength": -1,
+      "Name": "工程パターンNo",
+      "ColumnType": "System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "int",
+      "MaxLength": -1,
+      "Name": "工程順",
+      "ColumnType": "System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 5,
+      "Name": "工程コード",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "Required": true,
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 50,
+      "Name": "工程名",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "int",
+      "MaxLength": -1,
+      "Name": "工程個別リードタイム",
+      "ColumnType": "System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "int",
+      "MaxLength": -1,
+      "Name": "工程デフォルトリードタイム",
+      "ColumnType": "System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "int",
+      "MaxLength": -1,
+      "Name": "企業コード",
+      "ColumnType": "System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "varchar",
+      "MaxLength": 8,
+      "Name": "取引先コード",
+      "ColumnType": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "$type": "Forguncy.SaveLoad.BindingColumnSaveData, ServerDesignerCommon",
+      "DatabaseColumnType": "decimal",
+      "MaxLength": -1,
+      "Name": "単価",
+      "ColumnType": "System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    }
+  ],
+  "ExternalDatabaseInfo": {
+    "DataBaseType": "6db454c0-531c-4395-9122-921a18942902",
+    "ConnectionId": "Remacsweb",
+    "SourceTableName": "ymia_v_hinban_leadtime",
+    "SourceTableSchema": "",
+    "CreateViewSql": "select `h`.`HINBAN` AS `品番`,`h`.`HINMEI` AS `品名`,`h`.`KOTEI_PATTERN_NBR` AS `工程パターンNo`,`km`.`KOTEI_JUN` AS `工程順`,`km`.`KOTEI_CODE` AS `工程コード`,`kn`.`KOTEI_NAME` AS `工程名`,`km`.`LEAD_TIME` AS `工程個別リードタイム`,`kn`.`LEAD_TIME` AS `工程デフォルトリードタイム`,`t`.`KIGYO_CODE` AS `企業コード`,`t`.`TORIHIKISAKI_CODE` AS `取引先コード`,`t`.`TANKA` AS `単価` from (((`mhinban` `h` join `mkoteim` `km` on((`h`.`KOTEI_PATTERN_NBR` = `km`.`KOTEI_PATTERN_NBR`))) join `mkoteiname` `kn` on((`km`.`KOTEI_CODE` = `kn`.`KOTEI_CODE`))) left join (select `m`.`HINBAN` AS `HINBAN`,`m`.`KIGYO_CODE` AS `KIGYO_CODE`,`m`.`TORIHIKISAKI_CODE` AS `TORIHIKISAKI_CODE`,`md`.`TANKA` AS `TANKA` from (`mtanka` `m` left join `mtankam` `md` on((`m`.`TANKA_SEQ` = `md`.`TANKA_SEQ`))) where ((`m`.`TANKA_SEQ` = (select min(`m2`.`TANKA_SEQ`) from `mtanka` `m2` where (`m2`.`HINBAN` = `m`.`HINBAN`))) and (`md`.`QUANTITY` = (select min(`md2`.`QUANTITY`) from `mtankam` `md2` where (`md2`.`TANKA_SEQ` = `m`.`TANKA_SEQ`))))) `t` on((`h`.`HINBAN` = `t`.`HINBAN`))) where (`h`.`KAITEI_SEQ_NBR` = (select max(`h2`.`KAITEI_SEQ_NBR`) from `mhinban` `h2` where (`h2`.`HINBAN` = `h`.`HINBAN`)))",
+    "ViewInfo": {
+      "ViewName": "ymia_v_hinban_leadtime",
+      "IsUpdatable": true,
+      "QueryColumns": []
+    }
+  },
+  "PrimaryKey": [
+    "品番"
+  ],
+  "Indexes": []
+}

@@ -1,0 +1,17 @@
+[
+  {
+    "ConnectionString": "d4mpsqaKu9ZBdUh8KEaFavyAN86HHMr7D8fUK1Rd6SRVbeyqTaleujITPsryZ6a0IjF7iR140o5TrygziNi5OpQRIy6pXMaTmZPC4MpR6t/TbViWqQXIeLEHCqIxa64KE3knRp7nndW309O+s78drnqVrD24/gTh5BfHwbzjliI=",
+    "DataBaseType": "347a1ed5-25f0-4a4b-846c-8d69cedcf33d",
+    "ID": "SqlServer1"
+  },
+  {
+    "ConnectionString": "IF8sFdNWUSrvVLXtVyY8cUjUKQzsc2KJR+eLrFaNiumDgDPWsVvvIdFJaHjJNV/SQTdN62IcTjr6fJUz1Vp3NywJ+nrQ95/OE2Kd2XYiVjqRuQ5WVPhTuAceUlNdRvw2XIbs/9nE4kcNCiTukU3oP/uEbxs7qXUgIkoYsBNw2zU=",
+    "DataBaseType": "6f9b2f11-4f6a-43db-9b65-bbd46872e09d",
+    "ID": "Remacsweb"
+  },
+  {
+    "ConnectionString": "9qRUAuWctyBR9nrZUTHIFfseAdbAiBUqRGPBZflfDpE=",
+    "DataBaseType": "3abc35b0-dff8-45a1-82b7-a1261ab98b44",
+    "ID": "Odbc1"
+  }
+]

@@ -1,0 +1,105 @@
+{
+  "Rows": {
+    "Count": 29
+  },
+  "Cols": {
+    "Count": 18
+  },
+  "Values": {
+    "0,0": "  ",
+    "7,3": "認証アプリの構成",
+    "9,3": "モバイル端末の認証アプリでアカウントを追加し、下のQRコードをスキャンしてください。",
+    "22,3": "次へ"
+  },
+  "AttachInfos": {
+    "3,4": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "ImagePath": "fgc_logo_light.png"
+      }
+    },
+    "13,5": {
+      "CellType": {
+        "$type": "Forguncy.BarcodeCellType, ServerDesignerCommon",
+        "CodeType": "QRCode",
+        "ForguncyAttribute": "MFA_Secret_Barcode"
+      }
+    },
+    "22,3": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "Text": "次へ",
+        "AutoExecute": true,
+        "TemplateKey": "_RS_Outline_RoundCorner_Style2",
+        "ForguncyAttribute": "MFA_Secret_Next_Button"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "FontSize": 18.666666666666664,
+        "FontWeight": 1,
+        "Foreground": 2,
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 13.333333333333332,
+        "Foreground": 2,
+        "VerticalAlignment": 4,
+        "WordWrap": true
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "Bold",
+        "Background 1 0",
+        "Center",
+        "Top"
+      ]
+    },
+    "CellStyles": {
+      "7,3": 0,
+      "9,3": 1
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "3,4,3,10",
+    "22,3,2,12",
+    "13,5,8,8",
+    "7,3,2,12",
+    "9,3,3,12"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "Title": "認証アプリの構成",
+    "AuthorizeInfo": {
+      "VisitMode": 2
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "IsBuiltInPage": true,
+    "IsMobilePage": true
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "BackgroundPictures": [
+    {
+      "FitToBrowserWidth": true,
+      "FitToBrowserHeight": true,
+      "Name": "BackgroundPicture0",
+      "ForguncyPictureName": "MobileLoginBackground",
+      "ForguncyPictureSourceType": 2,
+      "Stretch": 3,
+      "Size": "360,580"
+    }
+  ]
+}//R173l0JyeujIaeSrm9JSVO/h/bjUxE+oSGnkF3496OZGc6IFaxskToX2L7ykMTu+8wOHTcrh4DSG+krewek62u3Q6ACVsKTSu6SyQLnmK3wEPL/gzEppPIsnqrSU9r7BpQF8yk4ETQ5FB7IQqsUAvhKMywoYE+LdRx+r54dFRtmA6ohjRatFKVwESb/LP/l1v1XNxUH/nvMFGuZz19x0qo5AnGBG/+MCADlgTMYb42BnJFsEZ/fMc4T/hksMpMSg8mIVdI9/Gt+xNMLuNIn8cNAe8tPPtHXel1HmT4M9icvvCZooRuQ/nIUHmtKO5RlAY3AL9Mw/o4pB7tbSZM25BkBJqGlRaKHwl8ewLR75X41/Gv0kJwFsaSUOKQCH61oXHaEpH4/S6GXsaXzfN2N9rMI8VaNlqm7cWTf9dZSK+A3EEKyHdvLBxmBjwLT79ugx4dTq0qSCEVbx4yR4XiwnfbTwosae8G3ZbSR9C3ZHHtEJ1yjdOh3mb5Rz8aQ+YpWTa8kFCTvyunDYuzHrf/eHJLklohGz0BV86b9tinzX+kzazmhOJPXS28IFnebJ8nnsrTUfYHb5RBORYgGstXZlxNv/0rzDgpHfdaJ8kRYi2Qah1BhWexRhGyTUJmaaRMJ/5Tm1zIKigC/aeZYdfcSum2wjunwUUZYEj2eQAbxK6psJU0/6tZhzaGJMf0ZJds8jeVvG7WELdJ1Gnz7MUMf/E/WiYbmXTshLqD4l6rGko5jn6rp/9TcvY7MbwiX8hDU8r1ob6LUqElK4HnubKShTMlpFDr7gN3gqRJyHenr0b/b5H1tqtl+Ol8715QIlLCJvOwvgIPIu/ApfouFXSJ9OvTt9jpQvUgezKd+cZnKmZzXFwlh1b5UOTyXJUbtsluC4uErw6fzPUC2fwMNw6TJjFQ==|920

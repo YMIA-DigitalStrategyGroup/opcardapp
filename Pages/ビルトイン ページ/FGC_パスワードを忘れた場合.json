@@ -1,0 +1,172 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "12": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      }
+    },
+    "Count": 25
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "20": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "21": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 10.0
+        }
+      }
+    },
+    "Count": 47
+  },
+  "Values": {
+    "5,12": "パスワードを忘れた場合",
+    "8,12": "ユーザー名もしくはメールアドレスを入力し、送信してください。パスワードリセットのためのリンクが記載されたメールが送信されます。メールを受信後、そのリンクを開いて新しいパスワードを入力することができます。",
+    "13,12": "ユーザー名、またはメール アドレス",
+    "17,25": "メールを送信",
+    "17,31": "キャンセル"
+  },
+  "AttachInfos": {
+    "14,22": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "ForguncyAttribute": "ForgotPassword_UserOrEmail"
+      },
+      "DataValidationInfo": {
+        "IgnoreBlank": false
+      }
+    },
+    "17,25": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "Text": "メールを送信",
+        "AutoExecute": true,
+        "TemplateKey": "_RS_Normal_Style2",
+        "ForguncyAttribute": "ForgotPassword_Send"
+      }
+    },
+    "17,31": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.NavigateCommand, ServerDesignerCommon",
+            "NavigateType": "back"
+          }
+        ],
+        "Text": "キャンセル",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 37.33333206176758,
+        "Foreground": 0
+      },
+      {
+        "Foreground": 0,
+        "WordWrap": true
+      },
+      {
+        "FontSize": 14.0,
+        "Foreground": 1,
+        "HorizontalAlignment": 2,
+        "WordWrap": true,
+        "Underline": false,
+        "Strikethrough": false
+      },
+      {
+        "Formatter": 3,
+        "Underline": false,
+        "Strikethrough": false
+      },
+      {
+        "FontSize": 14.0
+      },
+      {
+        "FontSize": 14.0,
+        "FontWeight": 4,
+        "Foreground": 5,
+        "HorizontalAlignment": 6
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Text 1 25",
+        "Text 1 35",
+        "Right",
+        "@",
+        "Bold",
+        "Accent 1 0",
+        "Center",
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "5,12": 0,
+      "8,12": 1,
+      "13,12": 2,
+      "14,22": 3,
+      "17,25": 4,
+      "17,31": 5
+    },
+    "SheetStyle": {
+      "FontFamily": 7,
+      "Underline": false,
+      "Strikethrough": false
+    }
+  },
+  "Spans": [
+    "5,12,3,24",
+    "8,12,5,24",
+    "17,25,2,5",
+    "17,31,2,5",
+    "14,22,1,13",
+    "13,12,3,9"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "MasterPageName": "FGC_ユーザーマスターページ",
+    "MobilePageName": "FGC_パスワードを忘れた場合_モバイル",
+    "Title": "パスワードを忘れた場合",
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "IsBuiltInPage": true
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "BackgroundPictures": [
+    {
+      "Name": "0b03a0d4-cfe9-4e90-8373-4c372736e704.png",
+      "StyleInfo": {
+        "Fill": "Background 1 -5",
+        "Stroke": "Background 1 -25",
+        "StrokeThickness": 1.0
+      },
+      "IsAutomaticStroke": false,
+      "IsAutomaticFill": false,
+      "Location": "200,80",
+      "Size": "540,360"
+    }
+  ]
+}//ScuZ6aGLir8Ef4AmMzWYqp2QnOXS+H5xQNARYkNk7I20lArVWPa69R1aKx5iFjAx3bhUNZxxd3YY+bZTTc89+tOdYm6lkVLIilWL+JF5bKzIhUsmheocS0aKY2mi4ZLielBkfVBYkGe5ct1IqxzbF9VFPDtrrHgMBe1AdpZXNKcGlJz+n9Lo/M+K+TXnnoWn31UFirOoJme0gG585Pr+kZjcsqX7QOp3Y+TQRUjsCpdnohWXKndmjEatY5f0sm24USWB3TMxjCMQ4tNS1XPJFqo+TciT6tU+q+OZq659s8+uVAce43RmchrYtN0nwYlHlEamgrnJZfqhxVcdrhHOQIE1mFiUsDm4pQJdtuONFU0TQ3fhVjJ8pIUpn8KNS6u+y1TCT9Dllazeb/EAl2ZDXXA9rjxuSCIgGZoKq12YCS6sZDvFDfbt/khGuPy6wqp/wyXzTmfHJrzmU9sgm6ywIw1iSO99HmJ4MrVHPTvDVhuyIvcVnGcYDwkTfXiNFeb2xxoPud0fag/fxCGXLsJXr5hxph4rAINzXsBvry16Az44Z8FCGks5WKe5lkA2U7gRfKpxb3oKAwX5kC39W7zvBi0nSA8hyKafuyg/GYvR0w3UDxYZkFjDxL19yvX4vDHKTJNbSox5+cCZRg42b7dsSL21Gwz9QNSLr46BdFevy+ZtEMrecfKmxj8u6xD8qEjHxJTfQ6EH+5Tuaslflp0/DWxDGNiIeUsemcnz6vtac0ioN17L6aIPMDhaMygQSmGZrUT/bhPC46vY0pySrUUIAPJylzxq2LeDYlp3ZBuwPV4dWWknmuKmkmR8zqDMShxisFilqhey2ii3+/VNLuTypGTltai2EVos1QKa9tszSwac95wzbue1Xd82jCxrXmcImKZBQ/1uxz6yFUFypMJ+pQ==|920

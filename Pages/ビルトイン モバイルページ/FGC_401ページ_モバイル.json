@@ -1,0 +1,139 @@
+{
+  "Rows": {
+    "Count": 25
+  },
+  "Cols": {
+    "Count": 18
+  },
+  "Values": {
+    "2,1": "アクセス許可の問題",
+    "5,1": "このページを表示するアクセス許可がありません。",
+    "7,1": "可能性のある原因:",
+    "9,1": "ログイン中のユーザーは、要求に必要なアクセス権を持っていません。",
+    "12,1": "解決方法：",
+    "14,1": 1,
+    "14,2": "一旦ログオフし、異なるアカウントでログインする",
+    "16,1": 2,
+    "16,2": "Webブラウザーの戻るボタンをクリックして前ページに戻り、異なるリンクを試す",
+    "19,1": 3,
+    "19,2": "管理者に問い合わせる"
+  },
+  "AttachInfos": {
+    "14,2": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "Text": "一旦ログオフし、異なるアカウントでログインする",
+        "ForguncyAttribute": "401Login"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 21.33333396911621,
+        "Foreground": 0,
+        "Formatter": 1,
+        "HorizontalAlignment": 2,
+        "VerticalAlignment": 3
+      },
+      {
+        "Foreground": 4,
+        "Formatter": 1,
+        "HorizontalAlignment": 2
+      },
+      {
+        "FontSize": 14.666666984558105,
+        "FontWeight": 5,
+        "Foreground": 6,
+        "Formatter": 1
+      },
+      {
+        "Foreground": 4,
+        "Formatter": 1,
+        "WordWrap": true
+      },
+      {
+        "FontSize": 14.666666984558105,
+        "Foreground": 4,
+        "Formatter": 1,
+        "HorizontalAlignment": 7
+      },
+      {
+        "Foreground": 8,
+        "Formatter": 1,
+        "Underline": true
+      },
+      {
+        "FontSize": 14.666666984558105,
+        "Foreground": 4,
+        "Formatter": 1,
+        "HorizontalAlignment": 7,
+        "VerticalAlignment": 9
+      },
+      {
+        "Foreground": 4,
+        "Formatter": 1,
+        "VerticalAlignment": 9,
+        "WordWrap": true
+      },
+      {
+        "Foreground": 4,
+        "Formatter": 1
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Accent 1 -50",
+        "[AUTO]General",
+        "Center",
+        "Bottom",
+        "#FF3F3F3F",
+        "Bold",
+        "#FF7F7F7F",
+        "Left",
+        "#FF0070C0",
+        "Top",
+        "Body",
+        "#FF000000"
+      ]
+    },
+    "CellStyles": {
+      "2,1": 0,
+      "5,1": 1,
+      "7,1": 2,
+      "9,1": 3,
+      "12,1": 2,
+      "14,1": 4,
+      "14,2": 5,
+      "16,1": 6,
+      "16,2": 7,
+      "19,1": 4,
+      "19,2": 8
+    },
+    "SheetStyle": {
+      "FontFamily": 10,
+      "FontSize": 13.333333015441895,
+      "Foreground": 11
+    }
+  },
+  "Spans": [
+    "5,1,1,16",
+    "7,1,2,16",
+    "9,1,2,17",
+    "12,1,2,16",
+    "16,2,2,15",
+    "2,1,2,16"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "Title": "401ページ",
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "IsBuiltInPage": true,
+    "IsMobilePage": true
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//PvQTLMCjWNWX/jCbjuuzwcvJrLbqZK1hMJrVR7Mzqvd9hd6Fgab54IXrRE7q6eo5VdAbadsXHoWOZTprX2iyHc8pehQXpzn1IJZQEo7Dp0T9eOvhGhLbgvxrQR7zvcHuSW+k2aIjcJU01a23ZkcjQkRzs1hkHC6d/XCDljXPJV2waQutX4IT7EnfKBk/B9vp+2J2Ofu2e7xFMq7jcU1ixrQPC0hMoj/aIW31r+LbJemJz6cV5L9o5eQ/gqLXxi6hmmBZwGFv2DFEZNvX1u2TZN78YuYeamtM4RJZRsZwK5PTT0YxSACRWma4xA88tLZNXm9Tyn2J0148Z5HBQPU0rtwAjgPL/OlsLAQ/1Je55W+ZBNefeM1aL75RlrQarRPk6F3MquUERWCn0EPrCXC0+DenxXAOl7oZ449TKunqjwmYMps32tiKLlkeDuQnkxsPA9KlakEwJTz6jGntqekpYvgTI+U+C3jBKok+abublX7V4pTRtmbWevTgXV9DbHHS+ivl43yiiUN/AaBm5L0S4yK0BcRgkLjdzhjGaYx3SyFFQ96Ggad/zuwda6eF8fUsDEwQPjLodPT3ffTlTjJPb6Gx1q9TgLSXZTWzEdzsWJjTQRTryqh8+5eAWOdcBckB8laOFSeA5v2uW+zKekyx1yArh/sBuvAwV0m3PTpgGLnlG5F/QqXdgo+PCPBEYt/pOIwI8wfxDNCiEJmztCsrFdoI4UQFsLtEWFSZnpEC5+CE+RUo6Zin+QWdwC6bA1rObxQt+XunlcW4sqSiI14tbtE7dE77nf8am2xWEPb2l3Hz1l+XU84Awpm2FYkluueNN4/lyK2vxqWywzg7fkphDJq0VgDTlLoLBtbMdgxcbbh0KoQaVYiPt4PnLKdPF9VmWyVK4TvG1I2fzSIDOav3Uw==|920

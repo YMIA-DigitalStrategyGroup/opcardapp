@@ -1,0 +1,397 @@
+{
+  "Rows": {
+    "InLogicalVisibleIndexes": [
+      0,
+      1
+    ],
+    "Count": 25
+  },
+  "Cols": {
+    "Count": 18
+  },
+  "Values": {
+    "0,0": "発注一覧",
+    "3,0": "部品",
+    "3,11": "検索",
+    "3,13": "",
+    "3,15": "クリア",
+    "4,0": "番号",
+    "6,14": "数量",
+    "6,16": "状態"
+  },
+  "Formulas": {
+    "5,2": "TRIM(C4)"
+  },
+  "AttachInfos": {
+    "3,0": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "CellDefaultValue": "部品",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "3,2": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "3,11": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "ymia_t_opcard_hachu",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "ymia_t_opcard_hachu",
+                "ColumnName": "部品コード",
+                "GUID": "50fd134f-35d3-474b-b605-5c9698cbe2a0"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "=発注一覧!C4"
+              }
+            },
+            "ID": "b345b3c112aa4dcda46601c850755817"
+          }
+        ],
+        "Text": "検索",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "3,13": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "SmartPhoneCommand.SmartPhoneCommand, SmartPhoneCommand",
+            "TargetCell": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=発注一覧!C4"
+            }
+          }
+        ],
+        "TemplateKey": "_RS_Normal_Style2",
+        "Icon": {
+          "Name": "Application/141_camera_2.svg",
+          "BuiltIn": true,
+          "Color": "Background 1",
+          "UseCellTypeForeColor": true
+        }
+      }
+    },
+    "3,15": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=発注一覧!C4"
+                }
+              }
+            ]
+          }
+        ],
+        "Text": "クリア",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "6,0": {
+      "ListViewInfo": {
+        "Name": "リストビュー1",
+        "TableName": "ymia_t_opcard_hachu",
+        "RowIndex": 6,
+        "RowCount": 18,
+        "ColumnCount": 18,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "ymia_t_opcard_hachu",
+            "ColumnName": "部品コード",
+            "GUID": "af88d86a-c113-4d44-83b7-625635bb78dd"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=発注一覧!C6"
+          }
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2,
+        "FrozenIndex": 1,
+        "FrozenIndexEnd": 5,
+        "DoNotLoadDataWhenLoadPage": true
+      }
+    },
+    "7,0": {
+      "BindingInfo": {
+        "TableName": "ymia_t_opcard_hachu",
+        "ColumnName": "発注日",
+        "GUID": "9ce14262-52ec-448e-88e6-4463c6ba42d6"
+      }
+    },
+    "7,4": {
+      "BindingInfo": {
+        "TableName": "ymia_t_opcard_hachu",
+        "ColumnName": "部品コード",
+        "GUID": "5bf9c6fc-3532-47cf-9992-575b1eeb7939"
+      }
+    },
+    "7,9": {
+      "BindingInfo": {
+        "TableName": "ymia_t_opcard_hachu",
+        "ColumnName": "部品名称",
+        "GUID": "594f228b-cf5e-4471-9c71-c8478c02eab6"
+      }
+    },
+    "7,14": {
+      "BindingInfo": {
+        "TableName": "ymia_t_opcard_hachu",
+        "ColumnName": "今回発注数",
+        "GUID": "283925dd-a556-4d6c-82fe-8a826dc189e9"
+      }
+    },
+    "7,16": {
+      "BindingInfo": {
+        "TableName": "ymia_t_opcard_hachu",
+        "ColumnName": "ステータス",
+        "GUID": "ccf87de9-514a-4755-9b0b-68ed79ba3dc4"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Background": 0,
+        "FontFamily": 1,
+        "Formatter": 2,
+        "HorizontalAlignment": 3,
+        "WordWrap": true,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "ShrinkToFit": true
+      },
+      {
+        "FontFamily": 1,
+        "BorderTop": 0
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 2,
+        "BorderTop": 0,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 1,
+        "BorderTop": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 1
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 14.67
+      },
+      {
+        "Background": 5,
+        "FontFamily": 1
+      },
+      {
+        "Background": 0,
+        "FontFamily": 1,
+        "HorizontalAlignment": 3,
+        "BorderBottom": 0,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 1,
+        "BorderBottom": 0
+      },
+      {
+        "FontFamily": 1,
+        "BorderBottom": 0,
+        "BorderLeft": 0
+      },
+      {
+        "FontFamily": 1,
+        "BorderBottom": 0,
+        "BorderRight": 0
+      },
+      {
+        "FontFamily": 1,
+        "Foreground": 6
+      },
+      {
+        "Formatter": 7
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 13.333333333333332
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 13.333333333333332,
+        "HorizontalAlignment": 8
+      },
+      {
+        "FontSize": 10.666666666666666
+      },
+      {
+        "Background": 0,
+        "FontSize": 16.0,
+        "FontWeight": 9,
+        "HorizontalAlignment": 3
+      },
+      {
+        "FontSize": 13.333333333333332
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Accent 3 80",
+        "Body",
+        "@",
+        "Center",
+        "black",
+        "Accent 2 -50",
+        "Background 1 0",
+        "yyyy/m/d",
+        "Right",
+        "Bold"
+      ],
+      "Borders": [
+        {
+          "Color": 4
+        }
+      ]
+    },
+    "CellStyles": {
+      "3,0": 0,
+      "3,1": 1,
+      "3,2": 2,
+      "3,3": 1,
+      "3,4": 1,
+      "3,5": 1,
+      "3,6": 1,
+      "3,7": 1,
+      "3,8": 1,
+      "3,9": 1,
+      "3,10": 3,
+      "3,11": 4,
+      "3,12": 4,
+      "3,13": 5,
+      "3,14": 4,
+      "3,15": 6,
+      "3,16": 4,
+      "4,0": 7,
+      "4,1": 8,
+      "4,2": 9,
+      "4,3": 8,
+      "4,4": 8,
+      "4,5": 8,
+      "4,6": 8,
+      "4,7": 8,
+      "4,8": 8,
+      "4,9": 8,
+      "4,10": 10,
+      "4,11": 4,
+      "4,12": 4,
+      "4,13": 4,
+      "4,14": 4,
+      "4,15": 4,
+      "4,16": 4,
+      "5,2": 11,
+      "5,3": 4,
+      "5,4": 4,
+      "5,5": 4,
+      "5,6": 4,
+      "5,7": 4,
+      "5,8": 4,
+      "5,9": 4,
+      "5,10": 4,
+      "7,0": 12,
+      "7,4": 4,
+      "7,9": 13,
+      "7,14": 14,
+      "7,15": 13,
+      "7,16": 15
+    },
+    "RowStyles": {
+      "0": 16,
+      "1": 16,
+      "6": 17,
+      "7": 17
+    },
+    "SheetStyle": {
+      "FontFamily": 1
+    }
+  },
+  "Spans": [
+    "0,0,2,18",
+    "7,0,1,4",
+    "3,0,1,2",
+    "4,0,1,2",
+    "3,2,2,9",
+    "3,11,2,2",
+    "3,15,2,2",
+    "3,13,2,2",
+    "5,2,1,9",
+    "8,0,16,18",
+    "7,4,1,5",
+    "7,9,1,5",
+    "7,14,1,2",
+    "7,16,1,2",
+    "6,0,1,4",
+    "6,4,1,5",
+    "6,9,1,5",
+    "6,14,1,2",
+    "6,16,1,2"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "MasterPageName": "opカード発注",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "IsMobilePage": true,
+    "RelatedDataTableName": "部品マスタ_集約版"
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//PvesTTr21UbKrNIOFPwS/9abJ4i2XBjqR4UZ5yiB8txPsUes6szSwwsyfKC6Bv1ZzmICMkQiuFfa5AGu8epqk7n38V9UCaiv5epH0udM+kklMIbfPoYZ+D1G7fo23H8Hrp/yUCBBjaL1ibD4tPKPsGENez+2c32/Op5QdM5KHCLnRV+L/pZSQf0uvKLSukmB5MxUBb5s/3mGNhsoFFFURooL1QqAdlfBDQb6zesjHPgvRfn0kMxzHKrThUa7AJttZuimwS124IywKX6PbcSA5CmKQAyOOino9WnhcPeV55lEGC8x2FTSD2oqrcr2zf0tfxxQIWFZ6oLw0tiDuN0h25s/X2dYY/16xH/EOPTydfbPOaD5LvgBltUnqA37KtdVbj+ifXTVJuICxKFZfXadb4jXYkmXgaQxFqAPPyaf9mwMd09xiYyFdcu1lcOFQHvp8xiw+z39mR6BUAhy2eFKjPiKgbwISGyn4yOlSwtOwbF25QabnYOjmQozgmdCZ22exIwPKQcBGqWmUqs7ZQaYpDfHbCaPz9qG1YwAK55ac8huMES6WhHjYQI22lS1GsMhn9xsq5ytzUU8n2HH1gY/F1DV4nK6wIZt/XHrbp34iry8+h8fwgj64mXQeoq9NsQblHWZCuEysU54hwNvMr4uCaEGatXX//3UWZLw4Py6/S8yjxmGmXWwzRXtNnhORNXQAVwIQq016xxUeA8qnwBgPcZMSWlni/sS0wXOZr1cLNXjtf+opckqTkaC/9DiZuFwV/tbTziLDLxWZH26/TZ1s+BF4PRIzVSRpCYym+zpZS4mWA80Nb2FWsBEA68fl0RSP98f8DJBrqo7u/6VxnUio5WCfU/HWKkxlShKVkGo/x1w4rdfcW3yVVN7b5M1qJeBCWepQVeXWTrchEv/OBJGdg==|920

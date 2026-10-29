@@ -1,0 +1,169 @@
+{
+  "Name": "発注データ作成",
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.SaveLoad.PostRequestTriggerSaveData, ServerDesignerCommon",
+      "Permission": {
+        "PermissionData": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionData, Forguncy.RbacPermission.Core",
+          "permissionResource": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionResource, Forguncy.RbacPermission.Core"
+          },
+          "permissionBindings": [
+            {
+              "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionBinding, Forguncy.RbacPermission.Core",
+              "roleNames": [
+                "FGC_LoginUser"
+              ]
+            }
+          ]
+        }
+      },
+      "Parameters": [
+        {
+          "Name": "部品コード",
+          "DataValidationInfo": {}
+        },
+        {
+          "Name": "部品名称",
+          "DataValidationInfo": {}
+        },
+        {
+          "Name": "規格寸法",
+          "DataValidationInfo": {}
+        },
+        {
+          "Name": "図面番号",
+          "DataValidationInfo": {}
+        },
+        {
+          "Name": "ロケーション",
+          "DataValidationInfo": {}
+        },
+        {
+          "Name": "発注点",
+          "DataValidationInfo": {}
+        },
+        {
+          "Name": "LT",
+          "DataValidationInfo": {}
+        },
+        {
+          "Name": "発注数",
+          "DataValidationInfo": {}
+        },
+        {
+          "Name": "単位",
+          "DataValidationInfo": {}
+        },
+        {
+          "Name": "収容数",
+          "DataValidationInfo": {}
+        },
+        {
+          "Name": "注文日",
+          "DataValidationInfo": {}
+        },
+        {
+          "Name": "画像",
+          "DataValidationInfo": {}
+        }
+      ]
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "ServerDesignerCommon.Command.ExecuteSqlCommand, ServerDesignerCommon",
+      "ConnStrId": "SqlServer1",
+      "Params": {
+        "部品コード": {
+          "Item1": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=部品コード"
+          },
+          "Item2": 22
+        },
+        "部品名称": {
+          "Item1": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=部品名称"
+          },
+          "Item2": 22
+        },
+        "規格寸法": {
+          "Item1": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=規格寸法"
+          },
+          "Item2": 22
+        },
+        "図面番号": {
+          "Item1": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=図面番号"
+          },
+          "Item2": 22
+        },
+        "ロケーション": {
+          "Item1": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=ロケーション"
+          },
+          "Item2": 22
+        },
+        "発注点": {
+          "Item1": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=発注点"
+          },
+          "Item2": 22
+        },
+        "LT": {
+          "Item1": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=LT"
+          },
+          "Item2": 22
+        },
+        "発注数": {
+          "Item1": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=発注数"
+          },
+          "Item2": 22
+        },
+        "単位": {
+          "Item1": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=単位"
+          },
+          "Item2": 22
+        },
+        "収容数": {
+          "Item1": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=収容数"
+          },
+          "Item2": 22
+        },
+        "注文日": {
+          "Item1": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=注文日"
+          },
+          "Item2": 31
+        },
+        "画像": {
+          "Item1": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=画像"
+          },
+          "Item2": 22
+        }
+      },
+      "SqlStatement": "INSERT INTO 部品発注データ( \r\n    [部品コード]\r\n    , [部品名称_社外]\r\n    , [規格寸法_社外]\r\n    , [図面番号]\r\n    , [ロケーション]\r\n    , [発注点]\r\n    , LT\r\n    , [発注数]\r\n    , [単位]\r\n    , [一箱収容数]\r\n    , [発注日]\r\n    , [画像]\r\n) \r\nVALUES ( \r\n@部品コード,\r\n@部品名称,\r\n@規格寸法,\r\n@図面番号,\r\n@ロケーション,\r\n@発注点,\r\n@LT,\r\n@発注数,\r\n@単位,\r\n@収容数,\r\n@注文日,\r\n@画像\r\n)\r",
+      "ID": "64fcf30eff1541ecb92d315812fa59b4"
+    }
+  ]
+}
