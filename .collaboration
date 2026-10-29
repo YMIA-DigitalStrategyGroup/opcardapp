@@ -186,7 +186,17 @@
   },
   {
     "ModuleName": "MobilePage/発注画面RM",
-    "ModuleType": 2
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\AA121806",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-10-30T07:44:17.6101573+09:00",
+    "ModuleType": 2,
+    "ToRemoveFiles": [
+      "Pages\\ビルトイン モバイルページ\\発注画面RM.json",
+      "Pages\\ビルトイン モバイルページ\\発注画面RM.rd"
+    ]
   },
   {
     "ModuleName": "MasterPCPage/FGC_ユーザーマスターページ",
