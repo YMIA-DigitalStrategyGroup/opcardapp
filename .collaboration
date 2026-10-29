@@ -5,16 +5,7 @@
   },
   {
     "ModuleName": "Table/ymia_t_opcard_hachu",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-10-29T18:06:16.0901199+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\SQLServer\\ymia_t_opcard_hachu.json"
-    ]
+    "ModuleType": 7
   },
   {
     "ModuleName": "Table/ymia_m_opcard_shiiremst",
@@ -42,16 +33,7 @@
   },
   {
     "ModuleName": "Table/tukeire",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-10-29T18:06:16.0901288+09:00",
-    "ModuleType": 7,
-    "ToRemoveFiles": [
-      "Tables\\Remacs\\tukeire.json"
-    ]
+    "ModuleType": 7
   },
   {
     "ModuleName": "Table/thatchur",
@@ -71,16 +53,7 @@
   },
   {
     "ModuleName": "TableView/ymia_v_mhinban_lastest",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-10-29T17:21:32.500117+09:00",
-    "ModuleType": 23,
-    "ToRemoveFiles": [
-      "Tables\\Remacs\\ymia_v_mhinban_lastest.json"
-    ]
+    "ModuleType": 23
   },
   {
     "ModuleName": "TableView/ymia_v_hinban_leadtime",
@@ -204,17 +177,7 @@
   },
   {
     "ModuleName": "MobilePage/発注画面RM",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-10-29T17:22:22.6978821+09:00",
-    "ModuleType": 2,
-    "ToRemoveFiles": [
-      "Pages\\ビルトイン モバイルページ\\発注画面RM.json",
-      "Pages\\ビルトイン モバイルページ\\発注画面RM.rd"
-    ]
+    "ModuleType": 2
   },
   {
     "ModuleName": "MasterPCPage/FGC_ユーザーマスターページ",
@@ -306,22 +269,10 @@
   },
   {
     "ModuleName": "MobilePage/発注画面RM_Backup",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-10-29T17:52:34.8000127+09:00",
     "ModuleType": 2
   },
   {
     "ModuleName": "TableView/ymia_v_mtanka_min",
-    "State": 3,
-    "LockedBy": {
-      "UserName": "UNITY\\AA121806",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-10-29T18:20:01.9301383+09:00",
     "ModuleType": 23
   }
 ]
