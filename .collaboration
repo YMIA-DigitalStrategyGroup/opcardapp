@@ -53,7 +53,16 @@
   },
   {
     "ModuleName": "TableView/ymia_v_mhinban_lastest",
-    "ModuleType": 23
+    "State": 1,
+    "LockedBy": {
+      "UserName": "UNITY\\AA121806",
+      "Email": "example@example.com"
+    },
+    "LockDateTime": "2026-10-30T13:40:31.0084059+09:00",
+    "ModuleType": 23,
+    "ToRemoveFiles": [
+      "Tables\\Remacs\\ymia_v_mhinban_lastest.json"
+    ]
   },
   {
     "ModuleName": "TableView/ymia_v_hinban_leadtime",
