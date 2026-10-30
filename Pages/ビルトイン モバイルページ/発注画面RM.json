@@ -58,7 +58,17 @@
       }
     },
     "InLogicalVisibleIndexes": [
-      6
+      6,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40
     ],
     "Count": 41
   },
@@ -135,11 +145,11 @@
     "35,13": "IF(K10=0,N39+7,N39+K10)",
     "36,13": "ODATA(\"ymia_v_mtanka_min?$select=TORIHIKISAKI_CODE&$filter=HINBAN eq \"&IF(ISBLANK(F4),\"null\",\"'\"&F4&\"'\"))",
     "8,13": "IF(F4<>\"\",ODATA(\"ymia_v_mhinban_lastest?$select=TANI_NAME&$filter=HINBAN eq \"&IF(ISBLANK(F4),\"null\",\"'\"&F4&\"'\")),\"\")",
-    "9,10": "IF(ISERROR(S10),1,S10)",
+    "9,10": "IF(ISERROR(J40),\"\",J40)",
     "37,13": "ODATA(\"ymia_v_mtanka_min?$select=TORIHIKISAKI_NAME&$filter=HINBAN eq \"&IF(ISBLANK(F4),\"null\",\"'\"&F4&\"'\"))",
     "13,5": "IF(ISERROR(S14),0,S14)",
     "13,18": "F9*F12",
-    "9,18": "IF(F4<>\"\",ODATA(\"ymia_v_hinban_leK10adtime?$select=工程個別リードタイム&$filter=品番 eq \"&IF(ISBLANK(F4),\"null\",\"'\"&F4&\"'\")),\"\")",
+    "39,13": "ODATA(\"ymia_v_mhinban_lastest?$select=LEAD_TIME&$filter=HINBAN eq \"&IF(ISBLANK(F4),\"null\",\"'\"&F4&\"'\"))",
     "35,9": "IF(ISERROR(N36),\"\",N36)",
     "32,9": "IF(ISERROR(N33),\"\",N33)",
     "33,9": "IF(ISERROR(N34),\"\",N34)",
@@ -999,7 +1009,7 @@
                     "MessageFormula": "発注情報を作成しました！！"
                   }
                 ],
-                "ID": "846ffce9-05b5-46e7-b39f-80b1eacf292e"
+                "ID": "153b3246-2cf6-422f-9206-4d8c74d56f16"
               }
             ]
           }
@@ -2440,4 +2450,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//JcCf3gzGO0aCzHiOf60ArRJHoXP69/RkMHsYJHKsQOk3YrwcrPA8z6iJj4DW8ZTwfbcv/bB91ZB0G4vVT207a7kuMoZdz119kE+D1KZIOyPofwZ3AVDnk1ktzB94zS/zFRDSv4DrpU9aLID6umByAlsOtUAUMqbGlU0Ja2Tf3CoPxrbJzh/Fmqz8Al5GU+K+8X4VByrwdIEmGHLESvrLwvk0oJFTgpMdYT5wNh4ZzPF7ZirXSaeveh1fYOx4IBfQZ7fSnfXufs1hpc4zFUMKYipjAIf9pPRoiVjYPcB1xdO5mIe0XSf8Zadupv0l5TsZ/zQFFc7cVXpOGGV/1V/WnCARYjUOtj73KvO4AaxF/zsdU2xlvbCjHNtnXRMWyjIRmQ9RChNF6EDY77Z4tfzItmYYPjI2YsE0z6Pi29B6csZAaWqQD4JssP8/PymuRaervCWppyyc020xWXOe5PmOwr/80AgpiQXwYWxoypJ5M6lUBXgz143QP9kpdxRtagzk7OMyjRRpLNYnif0Nu0I9RrP9Sa2+EOUkaV73v/nH9sN2XcmzU6eQuCixD4txO2uCnvsfpvPTBXpRwzIpIwXF/jarrjPr4sDZm1ru6Lxy4zus1AGoS7YaZlxJaoU2hqwWt4Ar7WPA5utyU+wopg7Ki47ABUzE4qqLW7aOmNp7lbdFUbfgO32g3uOTvNXpy4gNi/LOeMi3BdHKBY1B3EDAt4jcgYKYAGdPKCiiGEkF4FEHWE0kStsS8t/ihojKKHTqzIBtG23PbBj0gCokrlHTfIyA2k2sR0ScgznMoNm0OK1OW6msDM8bF/iHIIWhO46teFrE1aDHH2jzJG/L1krbFn6qfQsy306B7+4WarJoKOqgBhPOmGpQAKsBvQOO/X4DGF1Sc9d85GUqvTyBosu7ew==|920
+}//B7Fo9xWKAVBccdL9x8aRNjHehDl+nMH6MmvwAEum0ajo3Q0WsjOQK06C8uen7IZQB5i5GuVr+ONSCXGXtxMM+hkY2qJZyCq0X1JvZvaqBRqx4zBs90HBHgZKfn6tl/ouMpYX8EeIkadaqY9+fyjtLORq7Pbvv7buy/d/eOiwWx4eSmhsGgf20K/zhkGMUf56qSCWgys+K+PVquKnEan/v2droOGKd/tkYmhpNOqCmlN3f1oeRWtkeD415Xx/6H3r1rv9IkgA3tQ63JocB/HQxUcee/tVVs1KgPbtSpFT9e42M3+ec99IpIJ02DV8CDBAzzNzOA+28HPnKkri3gTfWB6bsM5OJSkYZmuHjjITqfYCz9efHl4mMkfWo2+LRnEodGxToKzyimAFjGqo1Zg+LKNAW11QGyxK/RN5e3SmXmUbh7xQ2LVTa81a5vfx3ygG6DWprzGbQM9EZFf4fU4359BEk+KSjSVtSpmF3nV+sgEUdMvv4xdOUiSYahLJ8SCCx4MMfV6ulaEh7UFY+Oj5aFZDX/b8EkKrNV6ms9G+/rqG3fJYCM2cf5rOVguxSRmoy2JIyGNa9E+xM1NE7fOcN15AFd4iY9t1PKNC2xBfsL9vaIkvrKkpLtVU5GACvVXsL0up7BvQC+AzHY6x2kgRCqrhrTgrL7/YzMUZ52I0fnPY2Yw4ewA78nU3oTyr011/tAi/yRQWVmXv6cOMrKRpy/0hvUR8uAKMCBPTACy5+1rmr5gY6uP0ceo2vSDxW+m8DHhDF+2iucfZ0Jw6J5W3DGXUmpG6T+RskzZ6StTHKVIS7KVflwipIHm5yI+RwnqAvqu1j0CmvWeue3/B+L4OE4f1rKCUI6KHtEjtHhJ2Zl0ZjqRxtnRRx/ib5OkjGJabclSQp2pVNM/Jd9KiAu4gjQ==|920
