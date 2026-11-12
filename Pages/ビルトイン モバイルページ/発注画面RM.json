@@ -537,6 +537,19 @@
                   "SerializeProperty": "=発注画面RM!F9"
                 }
               }
+            ],
+            "Disabled": true
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=発注画面RM!F12"
+                },
+                "Value": "1"
+              }
             ]
           }
         ],
@@ -596,420 +609,468 @@
             "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
             "ConditionAndCommandPairList": [
               {
-                "ConfirmDialogSettings": {
-                  "Title": "確認",
-                  "FormulaText": "発注データを作成しますか？",
-                  "YesButtonText": "はい",
-                  "NoButtonText": "いいえ",
-                  "ConfirmIcon": 1
+                "Condition": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "SubConditions": [
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=発注画面RM!F12"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=発注画面RM!F12"
+                          }
+                        ]
+                      },
+                      "value": "0"
+                    }
+                  ],
+                  "RelationType": 1
                 },
                 "CommandList": [
                   {
-                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
-                    "PropertyItemsList": [
-                      {
-                        "TargetCells": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=発注画面RM!J33"
-                        },
-                        "Value": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=発注画面RM!N33"
-                        }
-                      },
-                      {
-                        "TargetCells": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=発注画面RM!J34"
-                        },
-                        "Value": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=発注画面RM!N34"
-                        }
-                      },
-                      {
-                        "TargetCells": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=発注画面RM!J35"
-                        },
-                        "Value": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=発注画面RM!N35"
-                        }
-                      },
-                      {
-                        "TargetCells": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=発注画面RM!J36"
-                        },
-                        "Value": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=発注画面RM!N36"
-                        }
-                      },
-                      {
-                        "TargetCells": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=発注画面RM!J37"
-                        },
-                        "Value": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=発注画面RM!N37"
-                        }
-                      },
-                      {
-                        "TargetCells": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=発注画面RM!J38"
-                        },
-                        "Value": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=発注画面RM!N38"
-                        }
-                      },
-                      {
-                        "TargetCells": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=発注画面RM!J39"
-                        },
-                        "Value": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=発注画面RM!N39"
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
-                    "TableName": "ymia_t_opcard_hachu",
-                    "UpdateType": "add",
-                    "ShowConfirm": false,
-                    "Disabled": true
-                  },
-                  {
-                    "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
-                    "TableName": "ymia_t_opcard_hachu",
-                    "UpdateType": "add",
-                    "ShowConfirm": false,
-                    "UpdateBindingValues": [
-                      {
-                        "BindingInfo": {
-                          "TableName": "ymia_t_opcard_hachu",
-                          "ColumnName": "部品コード",
-                          "GUID": "03da43e9-6b95-4d73-8cab-a5c4627368b8"
-                        },
-                        "Value": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=発注画面RM!D2"
-                        }
-                      },
-                      {
-                        "BindingInfo": {
-                          "TableName": "ymia_t_opcard_hachu",
-                          "ColumnName": "部品名称",
-                          "GUID": "5ee45ef9-7070-44f4-ab17-93ac662be41e"
-                        },
-                        "Value": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=発注画面RM!F5"
-                        }
-                      },
-                      {
-                        "BindingInfo": {
-                          "TableName": "ymia_t_opcard_hachu",
-                          "ColumnName": "規格寸法",
-                          "GUID": "f72e90e6-3d71-4911-9987-46a07dc8ce4b"
-                        },
-                        "Value": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=発注画面RM!F6"
-                        }
-                      },
-                      {
-                        "BindingInfo": {
-                          "TableName": "ymia_t_opcard_hachu",
-                          "ColumnName": "図面番号",
-                          "GUID": "53add358-404b-423e-88b5-3d150efc3d90"
-                        },
-                        "Value": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=発注画面RM!F7"
-                        }
-                      },
-                      {
-                        "BindingInfo": {
-                          "TableName": "ymia_t_opcard_hachu",
-                          "ColumnName": "ロケーション",
-                          "GUID": "5e0d30f0-fe83-4054-822a-9505f0d9bf42"
-                        },
-                        "Value": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=発注画面RM!F8"
-                        }
-                      },
-                      {
-                        "BindingInfo": {
-                          "TableName": "ymia_t_opcard_hachu",
-                          "ColumnName": "ステータス",
-                          "GUID": "f2865468-07b4-4ab2-8920-63958f779abd"
-                        },
-                        "Value": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=発注画面RM!J33"
-                        }
-                      },
-                      {
-                        "BindingInfo": {
-                          "TableName": "ymia_t_opcard_hachu",
-                          "ColumnName": "発注コメント",
-                          "GUID": "9a73efea-f879-46de-9e45-531be796cde5"
-                        },
-                        "Value": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=発注画面RM!F15"
-                        }
-                      },
-                      {
-                        "BindingInfo": {
-                          "TableName": "ymia_t_opcard_hachu",
-                          "ColumnName": "社内コメント",
-                          "GUID": "64481fb7-9407-406d-8b99-8c4d3c637ddb"
-                        },
-                        "Value": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=発注画面RM!F16"
-                        }
-                      },
-                      {
-                        "BindingInfo": {
-                          "TableName": "ymia_t_opcard_hachu",
-                          "ColumnName": "Excel出力区分",
-                          "GUID": "a022df6a-d14c-4b79-8fb5-b49fcd6bd36b"
-                        },
-                        "Value": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=発注画面RM!J34"
-                        }
-                      },
-                      {
-                        "BindingInfo": {
-                          "TableName": "ymia_t_opcard_hachu",
-                          "ColumnName": "現場発注担当",
-                          "GUID": "c00df7c9-faa2-4139-bab0-28c0a5d3eb10"
-                        },
-                        "Value": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=発注画面RM!J35"
-                        }
-                      },
-                      {
-                        "BindingInfo": {
-                          "TableName": "ymia_t_opcard_hachu",
-                          "ColumnName": "発注日時",
-                          "GUID": "55feaceb-dce8-4dfa-ba21-c47dcdb75bb2"
-                        },
-                        "Value": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=NOW()"
-                        }
-                      },
-                      {
-                        "BindingInfo": {
-                          "TableName": "ymia_t_opcard_hachu",
-                          "ColumnName": "今回発注数",
-                          "GUID": "688f6845-86a2-4752-a07b-d53b0c92a5dd"
-                        },
-                        "Value": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=発注画面RM!F12"
-                        }
-                      },
-                      {
-                        "BindingInfo": {
-                          "TableName": "ymia_t_opcard_hachu",
-                          "ColumnName": "発注数",
-                          "GUID": "8692932b-2caf-4d94-9abf-8955b8dccd61"
-                        },
-                        "Value": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=発注画面RM!F9"
-                        }
-                      },
-                      {
-                        "BindingInfo": {
-                          "TableName": "ymia_t_opcard_hachu",
-                          "ColumnName": "単位",
-                          "GUID": "7cf5aa19-034f-4fc4-ba1c-895dbf5cebf0"
-                        },
-                        "Value": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=発注画面RM!N9"
-                        }
-                      },
-                      {
-                        "BindingInfo": {
-                          "TableName": "ymia_t_opcard_hachu",
-                          "ColumnName": "発注日",
-                          "GUID": "53924f22-2188-457e-a283-185f74648adc"
-                        },
-                        "Value": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=発注画面RM!J39"
-                        }
-                      },
-                      {
-                        "BindingInfo": {
-                          "TableName": "ymia_t_opcard_hachu",
-                          "ColumnName": "希望納期",
-                          "GUID": "f608dd19-2094-46bf-819f-3065bf6d95ca"
-                        },
-                        "Value": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=発注画面RM!J36"
-                        }
-                      },
-                      {
-                        "BindingInfo": {
-                          "TableName": "ymia_t_opcard_hachu",
-                          "ColumnName": "仕入先コード",
-                          "GUID": "d0d1084e-e8e2-421a-9f37-1c36c8dd5e3f"
-                        },
-                        "Value": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=発注画面RM!J37"
-                        }
-                      },
-                      {
-                        "BindingInfo": {
-                          "TableName": "ymia_t_opcard_hachu",
-                          "ColumnName": "仕入先名称",
-                          "GUID": "bac3e6b3-a9ec-4f5e-9f96-a23e7a1dcf14"
-                        },
-                        "Value": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=発注画面RM!J38"
-                        }
-                      },
-                      {
-                        "BindingInfo": {
-                          "TableName": "ymia_t_opcard_hachu",
-                          "ColumnName": "購買担当",
-                          "GUID": "d3915d11-ef93-4788-9483-c6f7fca23d85"
-                        },
-                        "Value": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=発注画面RM!J41"
-                        }
-                      },
-                      {
-                        "BindingInfo": {
-                          "TableName": "ymia_t_opcard_hachu",
-                          "ColumnName": "ロット数",
-                          "GUID": "296bd0e7-7eec-4a17-981a-163681b219da"
-                        },
-                        "Value": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=発注画面RM!F9"
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
-                    "ListviewName": "リストビュー1",
-                    "UpdateType": 2,
-                    "UpdateRowType": 2
-                  },
-                  {
-                    "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
-                    "PropertyItemsList": [
-                      {
-                        "TargetCells": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=発注画面RM!F5"
-                        }
-                      },
-                      {
-                        "TargetCells": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=発注画面RM!F6"
-                        }
-                      },
-                      {
-                        "TargetCells": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=発注画面RM!F7"
-                        }
-                      },
-                      {
-                        "TargetCells": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=発注画面RM!F8"
-                        }
-                      },
-                      {
-                        "TargetCells": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=発注画面RM!F9"
-                        }
-                      },
-                      {
-                        "TargetCells": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=発注画面RM!N9"
-                        }
-                      },
-                      {
-                        "TargetCells": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=発注画面RM!F10"
-                        }
-                      },
-                      {
-                        "TargetCells": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=発注画面RM!K10"
-                        }
-                      },
-                      {
-                        "TargetCells": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=発注画面RM!P10"
-                        }
-                      },
-                      {
-                        "TargetCells": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=発注画面RM!D2"
-                        }
-                      },
-                      {
-                        "TargetCells": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=発注画面RM!F12"
-                        },
-                        "Value": "0"
-                      },
-                      {
-                        "TargetCells": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=発注画面RM!F15"
-                        }
-                      },
-                      {
-                        "TargetCells": {
-                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
-                          "SerializeProperty": "=発注画面RM!F16"
-                        }
-                      }
-                    ]
-                  },
-                  {
                     "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
-                    "MessageFormula": "発注情報を作成しました！！"
+                    "MessageFormula": "発注数を入力してください"
                   }
                 ],
-                "ID": "153b3246-2cf6-422f-9206-4d8c74d56f16"
+                "ID": "38664928-cd4f-412f-9bd2-48b2b13e026d"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                    "ConditionAndCommandPairList": [
+                      {
+                        "ConfirmDialogSettings": {
+                          "Title": "確認",
+                          "FormulaText": "発注データを作成しますか？",
+                          "YesButtonText": "はい",
+                          "NoButtonText": "いいえ",
+                          "ConfirmIcon": 1
+                        },
+                        "CommandList": [
+                          {
+                            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                            "PropertyItemsList": [
+                              {
+                                "TargetCells": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=発注画面RM!J33"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=発注画面RM!N33"
+                                }
+                              },
+                              {
+                                "TargetCells": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=発注画面RM!J34"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=発注画面RM!N34"
+                                }
+                              },
+                              {
+                                "TargetCells": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=発注画面RM!J35"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=発注画面RM!N35"
+                                }
+                              },
+                              {
+                                "TargetCells": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=発注画面RM!J36"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=発注画面RM!N36"
+                                }
+                              },
+                              {
+                                "TargetCells": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=発注画面RM!J37"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=発注画面RM!N37"
+                                }
+                              },
+                              {
+                                "TargetCells": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=発注画面RM!J38"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=発注画面RM!N38"
+                                }
+                              },
+                              {
+                                "TargetCells": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=発注画面RM!J39"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=発注画面RM!N39"
+                                }
+                              }
+                            ]
+                          },
+                          {
+                            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                            "TableName": "ymia_t_opcard_hachu",
+                            "UpdateType": "add",
+                            "ShowConfirm": false,
+                            "Disabled": true
+                          },
+                          {
+                            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                            "TableName": "ymia_t_opcard_hachu",
+                            "UpdateType": "add",
+                            "ShowConfirm": false,
+                            "UpdateBindingValues": [
+                              {
+                                "BindingInfo": {
+                                  "TableName": "ymia_t_opcard_hachu",
+                                  "ColumnName": "部品コード",
+                                  "GUID": "03da43e9-6b95-4d73-8cab-a5c4627368b8"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=発注画面RM!D2"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "ymia_t_opcard_hachu",
+                                  "ColumnName": "部品名称",
+                                  "GUID": "5ee45ef9-7070-44f4-ab17-93ac662be41e"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=発注画面RM!F5"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "ymia_t_opcard_hachu",
+                                  "ColumnName": "規格寸法",
+                                  "GUID": "f72e90e6-3d71-4911-9987-46a07dc8ce4b"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=発注画面RM!F6"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "ymia_t_opcard_hachu",
+                                  "ColumnName": "図面番号",
+                                  "GUID": "53add358-404b-423e-88b5-3d150efc3d90"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=発注画面RM!F7"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "ymia_t_opcard_hachu",
+                                  "ColumnName": "ロケーション",
+                                  "GUID": "5e0d30f0-fe83-4054-822a-9505f0d9bf42"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=発注画面RM!F8"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "ymia_t_opcard_hachu",
+                                  "ColumnName": "ステータス",
+                                  "GUID": "f2865468-07b4-4ab2-8920-63958f779abd"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=発注画面RM!J33"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "ymia_t_opcard_hachu",
+                                  "ColumnName": "発注コメント",
+                                  "GUID": "9a73efea-f879-46de-9e45-531be796cde5"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=発注画面RM!F15"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "ymia_t_opcard_hachu",
+                                  "ColumnName": "社内コメント",
+                                  "GUID": "64481fb7-9407-406d-8b99-8c4d3c637ddb"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=発注画面RM!F16"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "ymia_t_opcard_hachu",
+                                  "ColumnName": "Excel出力区分",
+                                  "GUID": "a022df6a-d14c-4b79-8fb5-b49fcd6bd36b"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=発注画面RM!J34"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "ymia_t_opcard_hachu",
+                                  "ColumnName": "現場発注担当",
+                                  "GUID": "c00df7c9-faa2-4139-bab0-28c0a5d3eb10"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=発注画面RM!J35"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "ymia_t_opcard_hachu",
+                                  "ColumnName": "発注日時",
+                                  "GUID": "55feaceb-dce8-4dfa-ba21-c47dcdb75bb2"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=NOW()"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "ymia_t_opcard_hachu",
+                                  "ColumnName": "今回発注数",
+                                  "GUID": "688f6845-86a2-4752-a07b-d53b0c92a5dd"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=発注画面RM!F12"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "ymia_t_opcard_hachu",
+                                  "ColumnName": "発注数",
+                                  "GUID": "8692932b-2caf-4d94-9abf-8955b8dccd61"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=発注画面RM!F9"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "ymia_t_opcard_hachu",
+                                  "ColumnName": "単位",
+                                  "GUID": "7cf5aa19-034f-4fc4-ba1c-895dbf5cebf0"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=発注画面RM!N9"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "ymia_t_opcard_hachu",
+                                  "ColumnName": "発注日",
+                                  "GUID": "53924f22-2188-457e-a283-185f74648adc"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=発注画面RM!J39"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "ymia_t_opcard_hachu",
+                                  "ColumnName": "希望納期",
+                                  "GUID": "f608dd19-2094-46bf-819f-3065bf6d95ca"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=発注画面RM!J36"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "ymia_t_opcard_hachu",
+                                  "ColumnName": "仕入先コード",
+                                  "GUID": "d0d1084e-e8e2-421a-9f37-1c36c8dd5e3f"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=発注画面RM!J37"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "ymia_t_opcard_hachu",
+                                  "ColumnName": "仕入先名称",
+                                  "GUID": "bac3e6b3-a9ec-4f5e-9f96-a23e7a1dcf14"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=発注画面RM!J38"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "ymia_t_opcard_hachu",
+                                  "ColumnName": "購買担当",
+                                  "GUID": "d3915d11-ef93-4788-9483-c6f7fca23d85"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=発注画面RM!J41"
+                                }
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "ymia_t_opcard_hachu",
+                                  "ColumnName": "ロット数",
+                                  "GUID": "296bd0e7-7eec-4a17-981a-163681b219da"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=発注画面RM!F9"
+                                }
+                              }
+                            ]
+                          },
+                          {
+                            "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+                            "ListviewName": "リストビュー1",
+                            "UpdateType": 2,
+                            "UpdateRowType": 2
+                          },
+                          {
+                            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                            "PropertyItemsList": [
+                              {
+                                "TargetCells": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=発注画面RM!F5"
+                                }
+                              },
+                              {
+                                "TargetCells": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=発注画面RM!F6"
+                                }
+                              },
+                              {
+                                "TargetCells": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=発注画面RM!F7"
+                                }
+                              },
+                              {
+                                "TargetCells": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=発注画面RM!F8"
+                                }
+                              },
+                              {
+                                "TargetCells": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=発注画面RM!F9"
+                                }
+                              },
+                              {
+                                "TargetCells": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=発注画面RM!N9"
+                                }
+                              },
+                              {
+                                "TargetCells": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=発注画面RM!F10"
+                                }
+                              },
+                              {
+                                "TargetCells": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=発注画面RM!K10"
+                                }
+                              },
+                              {
+                                "TargetCells": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=発注画面RM!P10"
+                                }
+                              },
+                              {
+                                "TargetCells": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=発注画面RM!D2"
+                                }
+                              },
+                              {
+                                "TargetCells": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=発注画面RM!F12"
+                                },
+                                "Value": "0"
+                              },
+                              {
+                                "TargetCells": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=発注画面RM!F15"
+                                }
+                              },
+                              {
+                                "TargetCells": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=発注画面RM!F16"
+                                }
+                              }
+                            ]
+                          },
+                          {
+                            "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                            "MessageFormula": "発注情報を作成しました！！"
+                          }
+                        ],
+                        "ID": "3677080f-a1e3-4a96-9190-07444f669663"
+                      }
+                    ]
+                  }
+                ],
+                "ID": "d9cd420f-214d-482d-b751-b9457fd504d9"
               }
             ]
           }
@@ -2450,4 +2511,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//B7Fo9xWKAVBccdL9x8aRNjHehDl+nMH6MmvwAEum0ajo3Q0WsjOQK06C8uen7IZQB5i5GuVr+ONSCXGXtxMM+hkY2qJZyCq0X1JvZvaqBRqx4zBs90HBHgZKfn6tl/ouMpYX8EeIkadaqY9+fyjtLORq7Pbvv7buy/d/eOiwWx4eSmhsGgf20K/zhkGMUf56qSCWgys+K+PVquKnEan/v2droOGKd/tkYmhpNOqCmlN3f1oeRWtkeD415Xx/6H3r1rv9IkgA3tQ63JocB/HQxUcee/tVVs1KgPbtSpFT9e42M3+ec99IpIJ02DV8CDBAzzNzOA+28HPnKkri3gTfWB6bsM5OJSkYZmuHjjITqfYCz9efHl4mMkfWo2+LRnEodGxToKzyimAFjGqo1Zg+LKNAW11QGyxK/RN5e3SmXmUbh7xQ2LVTa81a5vfx3ygG6DWprzGbQM9EZFf4fU4359BEk+KSjSVtSpmF3nV+sgEUdMvv4xdOUiSYahLJ8SCCx4MMfV6ulaEh7UFY+Oj5aFZDX/b8EkKrNV6ms9G+/rqG3fJYCM2cf5rOVguxSRmoy2JIyGNa9E+xM1NE7fOcN15AFd4iY9t1PKNC2xBfsL9vaIkvrKkpLtVU5GACvVXsL0up7BvQC+AzHY6x2kgRCqrhrTgrL7/YzMUZ52I0fnPY2Yw4ewA78nU3oTyr011/tAi/yRQWVmXv6cOMrKRpy/0hvUR8uAKMCBPTACy5+1rmr5gY6uP0ceo2vSDxW+m8DHhDF+2iucfZ0Jw6J5W3DGXUmpG6T+RskzZ6StTHKVIS7KVflwipIHm5yI+RwnqAvqu1j0CmvWeue3/B+L4OE4f1rKCUI6KHtEjtHhJ2Zl0ZjqRxtnRRx/ib5OkjGJabclSQp2pVNM/Jd9KiAu4gjQ==|920
+}//grTZsd+fJXqNj9FgAsm0kyu+CRnaYz9g85z3wk5JHvtScwIAQGgBBy2h1v6kqjed3R7nZCewb0Dc5n7OAAvFxIr6aUOTpo0+QH8eD51de5esJ5qDfLD5f/WRqO7hhQlCj+xU9FdxHjr9G9aHyX4B6XMO2EYJo0hVj37zwK0d5VcLL/AKWn6sgJrQx1losaXMW8o2LHelRbzPIamljc2wDhCySc/7Re18UuVI3jdu3FJGCN0qrRFzGTsHt+kXTvOiYkU4kVSTQzd7jIFbBUA6VdlWejTrYBJfCmGb7mEpvL09TVVe5WyHH6FdU4+3vO1Fz0Slk2JFzChnMPJV2BKvnWMSV6jLOYji9OTvCWGxtQJVO+EnlLnS4YCM20dtF87ZmN6Wi8+zDTAHC+IalJoKvm94RGwZSXUHWN3VQpSy5IRzCfjdZgOeSQEypbGsWo8F6+q8jKPUrMeTF60mSfq4z1p2juF/qoM2XZj5ckbyqlBHPVhuVdwG4cLYe5hUYDT2dwSKgYXfqk/bh1amiHSg7yTfR0JXD2l7SrxEmr6Rb08jUV4qlUgsMB/ZaNg+UeoMY4VgPr+B9giRhAE/JWOcYu5ABNErFf1JJcJ1TUNwNj0TbY50VMiZy8dv0TnnNtp1Le1gKvbrU6jBbCXzydQ54SbDL2o0OIXXxS+Vu4SdJo6sblS8jBc5gwmzOGw9WCLdsq7ndkXJmyqilcAIYTFo6u31MRL8Lm+pnCrmzgSQqCMiRXEj9x+NdRwgb1VphTGooIHo/AueH8lOE/ednGYsVAJWHjtrFzarXtG8ld5K5hFM5RRRWo1F+qnmeO7h1vIi6Y462wY7u6YWgYJxTEJy7NwVy6Ei6iZWvUPAfNKiVNxQGbFiXdRGuUO5iKDnhkd/Ohswom2APeh/l+U0VXrz/w==|920
