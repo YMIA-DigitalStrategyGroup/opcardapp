@@ -157,17 +157,7 @@
   },
   {
     "ModuleName": "MobilePage/FGC_ログイン_モバイル",
-    "State": 1,
-    "LockedBy": {
-      "UserName": "UNITY\\999D4610",
-      "Email": "example@example.com"
-    },
-    "LockDateTime": "2026-11-19T14:47:08.8788965+09:00",
-    "ModuleType": 2,
-    "ToRemoveFiles": [
-      "Pages\\ビルトイン モバイルページ\\FGC_ログイン_モバイル.json",
-      "Pages\\ビルトイン モバイルページ\\FGC_ログイン_モバイル.rd"
-    ]
+    "ModuleType": 2
   },
   {
     "ModuleName": "MobilePage/発注一覧",
