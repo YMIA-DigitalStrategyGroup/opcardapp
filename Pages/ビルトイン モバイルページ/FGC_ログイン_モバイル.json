@@ -28,7 +28,7 @@
     "Count": 26
   },
   "Values": {
-    "7,0": "OPカード発注アプリ",
+    "5,0": "OPカード発注アプリ",
     "18,3": "ログイン",
     "21,3": "パスワードを忘れた場合",
     "23,3": "バーコード",
@@ -40,6 +40,12 @@
     "20,18": "S19"
   },
   "AttachInfos": {
+    "7,0": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "ImagePath": "Remacs_Logo.png"
+      }
+    },
     "10,3": {
       "CellType": {
         "$type": "Forguncy.TextCellType, ServerDesignerCommon",
@@ -210,26 +216,43 @@
         "Foreground": 0
       },
       {
+        "FontFamily": 1,
         "FontSize": 21.33333396911621,
-        "Foreground": 1,
-        "Formatter": 2,
-        "HorizontalAlignment": 3,
-        "VerticalAlignment": 4
+        "Foreground": 2,
+        "Formatter": 3,
+        "HorizontalAlignment": 4,
+        "VerticalAlignment": 5,
+        "Underline": false,
+        "Strikethrough": false
+      },
+      {
+        "FontFamily": 1,
+        "Underline": false,
+        "Strikethrough": false
+      },
+      {
+        "Background": 6,
+        "FontSize": 14.666666666666666,
+        "Foreground": 2,
+        "Formatter": 3,
+        "HorizontalAlignment": 4,
+        "VerticalAlignment": 5,
+        "WordWrap": true
       },
       {
         "FontSize": 13.333333015441895,
-        "Formatter": 5,
+        "Formatter": 7,
         "Underline": false,
         "Strikethrough": false
       },
       {
         "FontSize": 13.333333015441895,
-        "Foreground": 6
+        "Foreground": 8
       },
       {
         "FontSize": 16.0,
-        "FontWeight": 7,
-        "Formatter": 2,
+        "FontWeight": 9,
+        "Formatter": 3,
         "Underline": false,
         "Strikethrough": false
       },
@@ -240,8 +263,8 @@
         "BorderRight": 0
       },
       {
-        "Background": 9,
-        "FontFamily": 10,
+        "Background": 11,
+        "FontFamily": 1,
         "Underline": false,
         "Strikethrough": false,
         "BorderBottom": 0,
@@ -251,126 +274,163 @@
       },
       {
         "FontSize": 13.333333015441895,
-        "Foreground": 11,
-        "Formatter": 2,
-        "HorizontalAlignment": 3,
+        "Foreground": 12,
+        "Formatter": 3,
+        "HorizontalAlignment": 4,
         "Underline": true,
         "Strikethrough": false
       },
       {
         "FontSize": 13.333333015441895,
-        "Foreground": 6,
-        "Formatter": 2,
-        "HorizontalAlignment": 3,
+        "Foreground": 8,
+        "Formatter": 3,
+        "HorizontalAlignment": 4,
         "Underline": false,
         "Strikethrough": false
       },
       {
-        "Background": 12,
-        "FontWeight": 7
+        "Background": 13,
+        "FontWeight": 9
       },
       {
-        "Background": 12,
-        "FontWeight": 7,
+        "Background": 13,
+        "FontWeight": 9,
         "WordWrap": true
       },
       {
         "FontSize": 12.0,
-        "Foreground": 6,
-        "Formatter": 2,
-        "HorizontalAlignment": 3,
+        "Foreground": 8,
+        "Formatter": 3,
+        "HorizontalAlignment": 4,
         "WordWrap": true
       },
       {
-        "Background": 9
+        "Background": 11
       }
     ],
     "Types": {
       "Strs": [
         "#FF000000",
+        "Body",
         "Accent 1 -50",
         "[AUTO]General",
         "Center",
         "Top",
+        "Text 2 40",
         "@",
         "#FF7F7F7F",
         "Bold",
         "black",
         "Background 1 -15",
-        "Body",
         "#FF538BD5",
         "#FF00B050"
       ],
       "Borders": [
         {
-          "Color": 8
+          "Color": 10
         }
       ]
     },
     "CellStyles": {
       "2,4": 0,
-      "7,0": 1,
-      "10,3": 2,
-      "13,3": 2,
-      "16,3": 3,
-      "18,3": 4,
-      "18,18": 5,
-      "18,19": 5,
-      "18,20": 5,
-      "18,21": 5,
-      "18,22": 5,
-      "18,23": 5,
-      "18,24": 5,
-      "18,25": 5,
-      "19,18": 6,
-      "19,19": 6,
-      "19,20": 6,
-      "19,21": 6,
-      "19,22": 6,
-      "19,23": 6,
-      "19,24": 6,
-      "19,25": 6,
-      "20,18": 6,
-      "20,19": 6,
-      "20,20": 6,
-      "20,21": 6,
-      "20,22": 6,
-      "20,23": 6,
-      "20,24": 6,
-      "20,25": 6,
-      "21,3": 7,
-      "22,3": 7,
-      "23,1": 8,
-      "23,3": 9,
-      "23,11": 10,
-      "25,1": 11,
-      "25,18": 11,
-      "25,19": 11,
-      "25,20": 11,
-      "25,21": 11,
-      "25,22": 11,
-      "25,23": 11,
-      "25,24": 11,
-      "26,18": 11,
-      "26,19": 11,
-      "26,20": 11,
-      "26,21": 11,
-      "26,22": 11,
-      "26,23": 11,
-      "26,24": 11
+      "5,0": 1,
+      "5,1": 2,
+      "5,2": 2,
+      "5,3": 2,
+      "5,4": 2,
+      "5,5": 2,
+      "5,6": 2,
+      "5,7": 2,
+      "5,8": 2,
+      "5,9": 2,
+      "5,10": 2,
+      "5,11": 2,
+      "5,12": 2,
+      "5,13": 2,
+      "5,14": 2,
+      "5,15": 2,
+      "5,16": 2,
+      "5,17": 2,
+      "6,0": 2,
+      "6,1": 2,
+      "6,2": 2,
+      "6,3": 2,
+      "6,4": 2,
+      "6,5": 2,
+      "6,6": 2,
+      "6,7": 2,
+      "6,8": 2,
+      "6,9": 2,
+      "6,10": 2,
+      "6,11": 2,
+      "6,12": 2,
+      "6,13": 2,
+      "6,14": 2,
+      "6,15": 2,
+      "6,16": 2,
+      "6,17": 2,
+      "7,0": 3,
+      "10,3": 4,
+      "13,3": 4,
+      "16,3": 5,
+      "18,3": 6,
+      "18,18": 7,
+      "18,19": 7,
+      "18,20": 7,
+      "18,21": 7,
+      "18,22": 7,
+      "18,23": 7,
+      "18,24": 7,
+      "18,25": 7,
+      "19,18": 8,
+      "19,19": 8,
+      "19,20": 8,
+      "19,21": 8,
+      "19,22": 8,
+      "19,23": 8,
+      "19,24": 8,
+      "19,25": 8,
+      "20,18": 8,
+      "20,19": 8,
+      "20,20": 8,
+      "20,21": 8,
+      "20,22": 8,
+      "20,23": 8,
+      "20,24": 8,
+      "20,25": 8,
+      "21,3": 9,
+      "22,3": 9,
+      "23,1": 10,
+      "23,3": 11,
+      "23,11": 12,
+      "25,1": 13,
+      "25,18": 13,
+      "25,19": 13,
+      "25,20": 13,
+      "25,21": 13,
+      "25,22": 13,
+      "25,23": 13,
+      "25,24": 13,
+      "26,18": 13,
+      "26,19": 13,
+      "26,20": 13,
+      "26,21": 13,
+      "26,22": 13,
+      "26,23": 13,
+      "26,24": 13
     },
     "ColStyles": {
-      "18": 12,
-      "19": 12,
-      "20": 12,
-      "21": 12,
-      "22": 12,
-      "23": 12,
-      "24": 12,
-      "25": 12
+      "18": 14,
+      "19": 14,
+      "20": 14,
+      "21": 14,
+      "22": 14,
+      "23": 14,
+      "24": 14,
+      "25": 14
     },
     "SheetStyle": {
-      "FontFamily": 10,
+      "FontFamily": 1,
       "Underline": false,
       "Strikethrough": false
     }
@@ -382,12 +442,13 @@
     "13,3,2,13",
     "18,3,2,13",
     "21,3,1,13",
-    "7,0,2,18",
     "18,18,1,8",
     "19,18,1,8",
     "20,18,1,8",
     "23,3,2,7",
-    "23,11,2,5"
+    "23,11,2,5",
+    "5,0,2,18",
+    "7,0,2,18"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -410,8 +471,8 @@
       "ForguncyPictureName": "logo.png",
       "ForguncyPictureSourceType": 0,
       "Stretch": 2,
-      "Location": "62,38",
+      "Location": "64,18",
       "Size": "236,81"
     }
   ]
-}//bIUCaB5QW4/2L/6NQ2uY/4POK0PTrGBKiKa/7nxqVhQU77g11JA5ReAuqH4DzVd6b+2GojWcX+RXSugH0Ia/LTwC1oNL1OiRiamEHoESaD1g285tMrT4CNgBotpavwG67trFXh3SgUm3uLnSNgW7qyzaqloQ1EXH1FB5v4jsNA4w6kaiWnHmy8rxXti63cRnp3yTcxe5uKVSA4VtRtb7omaw6au96zeW/5rgYkowZP+Mzn7kfH+qI8PVHgRFG1MrW2mQ0gVq/jmu30jEuc5GmUxpCblJyFihx3g6Dyc+7eGNKh/vjXLYI3ixgiJs4AwvcmFfTgJM6BYQnGSZI3Y3riwBPU7LjOkLSMrX084iMo35boGCErJzpf/nHnga8j/cm1CQeJ1B/EBM1uqiGp8NbQ8XQ9xrR66fDBRvllRfz6jNuwOK8DsQjBXr/xjSfMPsZBvbSd6Nh4sK+unsalwY2K1BQ+omidtBZCCLdcthxGOXeUGGK4I9BOHi/Rrzu5+n3NhP3gA289jzoSBurzRnfpFFfstYRIYqCDeJ3MAZp/LBEul86FqZFwW/y3Hceyrv6LNtv/82t/qaIw+uBKEWJ29dL8wT/S8p7GAijmZaumXSyBthyyRdfYO7NUNtmNjKU54suRoSeo10eB/ht7dflflW9RCaxOFasV7qqdE9r1aFuaWTcF2N7LjEl93qwLwvo7Wm9dv99vztLGSqJd/wqL7o44EvUAJbwee4xVAwBw+shteWaydH6sb2U9m6h1Maz3snujMzt+9OckqW5TyGAj/CvxHzJZAazeTva25NzKYkcxUaahjOrdqWDcsxV4dtfQlYWrplXky2+yfTZDx1inDPoKegicyico4u3EYcyc2Qsm6flI+/wlw0/jQ2YFWzRuH8kdt/831qrlUmA0NR+Q==|920
+}//WAoB/cbFghXlp26rSQc5gWPH4L7l2Vq+Jmigr5zbi+NyX9CFje/zL8gqIkyanDvf5GRLAuMqZeeg6qCjChImep7Kzn7DMWtLiCxWe0dbrYrw8P6iMrTmBPeqBJsrP4u6joV80RN5WUebo9NZdvkVydMyoYEe76MH04h3XAh+/3JzrT+NB3UrPnDnmdWWlrD3MaOreCtK7zIoVh4eTDnjn2X4vP3ztzTxZwkXghz2DMxFIKDXl8TJOzgtBQvlPHpW5psZWCRNeZchn0RH0NkA/ZIyUWsLJa5eRUaz3vZMw0RxR5leh8juauztxEvFTQ3OcIrkrcelk+4ys8F/K27WaGRXbuaSjiT0py9XzkeQpgKOTjAWJltNj3dqP31LUpQ/qgt1L7MhYt+6/LvU+AA8Hw9H83jVSLM6+yCwIgE2sGIn7vreMCJ8Kkg1rO9HyhZEsHTTzEHZx0lE5yy2+QAk/GChKhiK6o4J/HGBmzGx6DVMuEURrdaHKy//lTzBSllJmRrfnF0TfY3P0HCJ71ilcsCqeVFNS1nFHUyQtfKcIB3IDMxWd1qAOZmcPKYv5Y+YI73jIVHJ5sKGHx/uB+XvUg2XH6j2sLiILt0DiHgo59NuLEpxYIstyZJ4vlfwAs6sosT0jt8uAwcG+Y/JbTztQNHBZqTUy37RgsZoGCTEgTkosrzjw5NXb0RUP8AOWvQVJRw1DPAAuU9yMXcUWoB6vBNBSafKQfcRmOOyifzy8Q3A/+wJPS+Xzfj3duGxRiX8nycXT3Delkx65IxzIpDLdBBHAydabAFoH7Nnf+o9H1Bdd2hS3ev8YZ527B3ezZazcwk6Q+uDgMrMrLrnHF2izGYS4EOowPlUZmXguIOKROs7TNnabXk/cR2y70Q+3Lg3T96d/zbNjeaQ11MC1qDsoQ==|920
